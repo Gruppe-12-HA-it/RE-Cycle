@@ -27,5 +27,5 @@ HA-IT 1. semester gruppe 12 projekt programmering
  
  ##Klassediagram
  ![Klassediagram]
- (https://i.gyazo.com/1e5f2c6e57f08939129ec0461d6b837c.png)
+ (ClassDiagram.png)
  
