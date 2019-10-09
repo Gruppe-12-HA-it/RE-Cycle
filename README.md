@@ -21,6 +21,10 @@ HA-IT 1. semester gruppe 12 projekt programmering
  Sørg for altid at tage en backup af din kode, da der er risiko for at gruppen laver fejl, og kommer til at slette noget.
  For at tage en backup, kan man bare lave en kopi af sin "RE-Cycle" folder og ligge den i en anden mappe under programmering, eksempelvis kaldet "backup"
  
+ 
+ For at gå tilbage når i har CD'et til f.eks. signup mappen, skriv `cd ..` og tryk enter. Kig derefter nede i terminalen om der står "RE-Cycle" kun, eller også mappen i var i før. Hvis der er brug for hjælp, så spørg i gruppen, og vi andre prøver at svare asap.
+ 
+ 
  ##Klassediagram
  ![Klassediagram]
  (https://i.gyazo.com/1e5f2c6e57f08939129ec0461d6b837c.png)
