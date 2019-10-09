@@ -6,4 +6,3 @@ HA-IT 1. semester gruppe 12 projekt programmering
  ##Programmer brugt
  Code editor benyttet = Webstorm
  
- ##
