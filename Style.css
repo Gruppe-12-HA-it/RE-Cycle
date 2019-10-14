@@ -1,6 +1,6 @@
 Body {
     font-family: verdana, geneva, sans-serif;
-    background-color: #EDC7B7
+    background-color: antiquewhite;
 }
 img {
 
@@ -26,20 +26,80 @@ li {
 li a {
     display: block;
     color: white;
+    height: 24px;
     text-align: center;
-    padding: 14px 16px;
+    padding: 4px 16px;
     text-decoration: none;
 
 }
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+#homebutton {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
 }
+#homebutton:hover {
+    background-color: #111;
+    height: 32px
+}
+#products {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+#products:hover {
+    background-color: #111;
+    height: 32px
+}
+#contact {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+#contact:hover {
+    background-color: #111;
+    height: 32px
+}
+#concept {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+#concept:hover {
+    background-color: #111;
+    height: 32px
+}
+
+
+/* Change the link color to black on hover */
+
 #cart {
 float:right;
 }
 
 #cartlogo{
-    padding: 4px 64px;
+    padding: 8px 24px 8px 16px;
+}
+#cart:hover {
+    background-color: #111;
+    height: 52px
+}
+#profile {
+    float:right;
+}
+
+#profileLogo {
+    padding: 8px 0px;
+
+}
+#profile:hover {
+    background-color: #111;
+    height: 52px
 }
