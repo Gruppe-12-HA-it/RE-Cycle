@@ -1,5 +1,6 @@
 Body {
     font-family: verdana, geneva, sans-serif;
+    background-color: #EDC7B7
 }
 img {
 
@@ -10,8 +11,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #123C69;
 }
+#shoppingLogo {
+    float:right;
+}
+
+
 
 li {
     float: left;
@@ -23,9 +29,17 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+#cart {
+float:right;
+}
+
+#cartlogo{
+    padding: 4px 64px;
 }
