@@ -1,11 +1,13 @@
 Body {
     font-family: verdana, geneva, sans-serif;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
 }
-img {
+.LogoImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    float:left;
-}
 ul {
     list-style-type: none;
     margin: 0;
