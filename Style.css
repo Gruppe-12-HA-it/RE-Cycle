@@ -2,12 +2,15 @@ Body {
     font-family: verdana, geneva, sans-serif;
     background-color: whitesmoke;
 }
+
+/*Adding the logo*/
 .LogoImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/*Styling the menu*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -15,16 +18,9 @@ ul {
     overflow: hidden;
     background-color: #123C69;
 }
-#shoppingLogo {
-    float:right;
-}
-
-
-
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: white;
@@ -34,17 +30,9 @@ li a {
     text-decoration: none;
 
 }
-#homebutton {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-}
-#homebutton:hover {
-    background-color: #111;
-    height: 32px
-}
+
+/*Styling for the specific links in the menu, including hover to change color,
+all based on the different ID's attached to the HTML code.*/
 #products {
     display: block;
     color: white;
@@ -78,14 +66,9 @@ li a {
     background-color: #111;
     height: 32px
 }
-
-
-/* Change the link color to black on hover */
-
 #cart {
 float:right;
 }
-
 #cartlogo{
     padding: 8px 24px 8px 16px;
 }
@@ -96,7 +79,6 @@ float:right;
 #profile {
     float:right;
 }
-
 #profileLogo {
     padding: 8px 0px;
 
@@ -104,4 +86,10 @@ float:right;
 #profile:hover {
     background-color: #111;
     height: 52px
+}
+
+/*Styling the Concept page specifically, making it look sleek*/
+#Concept {
+    font-family: 'Frank Ruhl Libre', serif;
+
 }
