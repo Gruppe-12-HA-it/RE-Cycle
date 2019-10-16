@@ -1,5 +1,6 @@
 # RE:Cycles
 HA-IT 1. semester gruppe 12 projekt programmering
+
 ## Brugsvejledning
  N/A
  
@@ -29,3 +30,8 @@ HA-IT 1. semester gruppe 12 projekt programmering
  
  ![Screenshot](Images/ClassDiagram.png)
  
+
+Copyright disclaimer:
+
+This product is created by group 12 of HA-IT on CBS. It is in no way intended for publishing, and should be considered private. Images used in the product are sourced 
+from different sources, among them sources where consent wasn't retrieveable.
