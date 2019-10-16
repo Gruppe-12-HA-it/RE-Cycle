@@ -1,8 +1,17 @@
+/*General page-wide styling to the body of the site*/
 Body {
-    font-family: verdana, geneva, sans-serif;
     background-color: whitesmoke;
 }
-
+/*Setting fonts for the different text types on the website - making sure to have a uniform design throughout the page*/
+p {
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
 /*Adding the logo*/
 .LogoImg {
     display: block;
@@ -17,6 +26,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #123C69;
+    font-family: Verdana, Perpetua, sans-serif;
 }
 li {
     float: left;
@@ -88,8 +98,14 @@ float:right;
     height: 52px
 }
 
-/*Styling the Concept page specifically, making it look sleek*/
-#Concept {
-    font-family: 'Frank Ruhl Libre', serif;
-
+/*styling for the article tags; mostly used in Concept and Contact*/
+Article {
+    padding-left: 40px;
+    Padding-right: 360px;
+    width: 920px;
+    float: left;
+}
+#ConceptImage {
+    float:left;
+    padding-top: 40px;
 }
