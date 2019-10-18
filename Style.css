@@ -94,7 +94,7 @@ float:right;
     float:right;
 }
 #profileLogo {
-    padding: 8px 0px;
+    padding: 8px;
 
 }
 #profile:hover {
@@ -113,7 +113,7 @@ Article {
     float:left;
     padding-top: 40px;
 }
-/*------- Hero --------*/
+/*Hero*/
 .banner {
     background-color: gainsboro;
     text-align: center;
@@ -135,7 +135,6 @@ Article {
         background: white;
         color: #111111;
         cursor: pointer;
-        transition: 0.3;
         border: 1px solid
 
     }
