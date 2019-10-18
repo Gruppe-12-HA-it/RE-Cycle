@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    align-content: center
 }
 
 /*Styling the menu*/
@@ -114,9 +115,10 @@ Article {
 .banner {
     background-color: gainsboro;
     text-align: center;
-    display: inline-list-item;
     padding: 1rem;
     opacity: 0.6;
+    display: inline-list-item;
+    border-radius: 10%;
 
 }
 .hero {
@@ -133,9 +135,21 @@ Article {
         cursor: pointer;
         transition: 0.3;
         border: 1px solid
+
     }
 .banner-title {
     color: black;
-    opacity:;
+    justify-content: center;
+}
 
+/*Styling of the mens, womens and childrens tags on the Products page*/
+#childrens {
+    text-align: center;
+}
+#mens {
+    float: left;
+}
+#womens {
+    float: right;
+>>>>>>> 898af9beb4023e467aded0b18930e43bd5169b93
 }
