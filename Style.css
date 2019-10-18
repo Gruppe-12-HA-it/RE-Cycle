@@ -29,9 +29,11 @@ ul {
     overflow: hidden;
     background-color: #123C69;
     font-family: Verdana, Perpetua, sans-serif;
+
 }
 li {
     float: left;
+   
 }
 li a {
     display: block;
