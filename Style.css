@@ -11,12 +11,14 @@ p {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     font-weight: 300;
+
 }
 /*Adding the logo*/
 .LogoImg {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    align-content: center
 }
 
 /*Styling the menu*/
@@ -27,9 +29,11 @@ ul {
     overflow: hidden;
     background-color: #123C69;
     font-family: Verdana, Perpetua, sans-serif;
+
 }
 li {
     float: left;
+   
 }
 li a {
     display: block;
@@ -90,7 +94,7 @@ float:right;
     float:right;
 }
 #profileLogo {
-    padding: 8px 0px;
+    padding: 8px;
 
 }
 #profile:hover {
@@ -109,18 +113,44 @@ Article {
     float:left;
     padding-top: 40px;
 }
-/*------- Hero --------*/
+/*Hero*/
 .banner {
+    background-color: gainsboro;
     text-align: center;
-    background: dimgrey, 0.2;
-    display: inline-block;
-    padding: 2rem;
+    padding: 1rem;
+    opacity: 0.8;
+    display: inline-list-item;
+    border-radius: 10%;
+
 }
 .hero {
-    min-height: calc(100vh - 60px);
-    background: url("./Images/dronning-louises-bro_cykler_martinheiberg.jpg") center/cover
-no-repeat;
-    display: flex;
+    min-height: calc(100vh - 40px);
+    background: url("./Images/dronning-louises-bro_cykler_martinheiberg.jpg") center/cover;
+    display:flex;
     align-items: center;
+    justify-content: center;}
+
+    .banner-btn {
+        font-size: 1rem;
+        background: white;
+        color: #111111;
+        cursor: pointer;
+        border: 1px solid
+
+    }
+.banner-title {
+    color: black;
     justify-content: center;
+}
+
+/*Styling of the mens, womens and childrens tags on the Products page*/
+#childrens {
+    text-align: center;
+}
+#mens {
+    float: left;
+}
+#womens {
+    float: right;
+>>>>>>> 898af9beb4023e467aded0b18930e43bd5169b93
 }

@@ -23,31 +23,34 @@
 <!-- Astrid:-->
 
 <h1> Log in: </h1>
-
     <form name="user_login">
+        <!--onsubmit="return validate() action="?"-->
 
-        <input type="text" id="username" value="" Placeholder="Enter username"/>
-        <br/>
-        <br/>
-
-        <input type="text" id="password" value="" placeholder="Enter password"/>
-
+        <input type="text" id="username" value="" Placeholder="Enter username" required/>
         <br/>
         <br/>
 
-        <button type="submit" style="cursor: pointer;" > Submit </button>
+        <input type="password" id="password" value="" placeholder="Enter password" required/>
+
         <br/>
         <br/>
-        <button type="Forgotten password" style="cursor: pointer;" > Forgotten password </button>
+
+        <button type="submit" onclick="validate()" style="cursor: pointer;" > Submit </button>
+        <br/>
+        <br/>
+        <button type="Submit" style="cursor: pointer;" > Forgotten password </button>
 
         <h4> Don't have an account?</h4>
 
-        <button type="Register" style="cursor: pointer;" > Register </button>
+        <button type="Submit" style="cursor: pointer;" > Register </button>
 
-<!-- <button type="submit" onclick="validateContactInformation()" style="cursor: pointer;" > Submit </button>
--->
+
+
     </form>
 
-<p></p>
+    <script type="application/x-javascript" src="../JavascriptFiles/Login.js"> </script>
+
+    <p></p>
 </body>
 </html>
+
