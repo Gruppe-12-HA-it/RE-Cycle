@@ -161,18 +161,13 @@ Article {
 .products {
     padding: 4rem 0;
 }
-.section-title h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 5rem;
-    text-transform: capitalize;
-}
+
 .products-center {
-    width: 90vw;
+    width: 90vw; /* vw 90% af skærmen */
     margin: 0 auto;
     max-width: 1170px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
 }
@@ -184,40 +179,35 @@ Article {
     position: absolute;
     top: 70%;
     right: 0;
-    background: white;
-    text-transform: uppercase;
+    background:orange;
     padding: 0.5rem 0.75rem;
-    font-weight: bold;
-    transition: initial;
+    font-weight: lighter;
+    transition: max-width;
     transform: translateX(101%);
     cursor: pointer;
 }
 .bag-btn:hover {
-    color: orange;
+    color: mintcream;
 }
 .img-container:hover .bag-btn {
     transform: translateX(0);
 }
+
+
 .product-img {
     display: block;
     width: 100%;
     min-height: 12rem;
-    transition: margin-top;
+    transition: all 0.3s linear;
 }
-.img-container:hover .product-img {
+.img-container .product-img{
     opacity: 0.5;
 }
 
 .product h3 {
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-    letter-spacing: initial;
+    text-transform: initial;
+    margin-top: 1.1rem;
     text-align: center;
+
 }
 
-.product h4 {
-    margin-top: 0.7rem;
-    color: orange;
-    text-align: center;
-}
