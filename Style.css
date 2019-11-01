@@ -150,64 +150,41 @@ Article {
 }
 #mens {
     float: left;
+    padding-left: 110px;
 }
 #womens {
     float: right;
->>>>>>> 898af9beb4023e467aded0b18930e43bd5169b93
+    padding-right: 110px;
 }
 
 /* Products */
-
-.products {
-    padding: 4rem 0;
-}
-
-.products-center {
-    width: 90vw; /* vw 90% af skærmen */
-    margin: 0 auto;
-    max-width: 1170px;
-    display: inline-grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
-}
-.img-container {
-    position: relative;
-    overflow: hidden;
-}
-.bag-btn {
-    position: absolute;
-    top: 70%;
-    right: 0;
-    background:orange;
-    padding: 0.5rem 0.75rem;
-    font-weight: lighter;
-    transition: max-width;
-    transform: translateX(101%);
-    cursor: pointer;
-}
-.bag-btn:hover {
-    color: mintcream;
-}
-.img-container:hover .bag-btn {
-    transform: translateX(0);
-}
-
-
-.product-img {
-    display: block;
-    width: 100%;
-    min-height: 12rem;
-    transition: all 0.3s linear;
-}
-.img-container .product-img{
-    opacity: 0.5;
-}
-
-.product h3 {
-    text-transform: initial;
-    margin-top: 1.1rem;
+.card {
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
     text-align: center;
+    font-family: arial;
 
+}
+
+.price {
+    color: grey;
+    font-size: 28px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
 }
 
