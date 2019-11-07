@@ -24,9 +24,10 @@ document.getElementById('cart').addEventListener('click', function(event) {
 
 });
 
-//Checking login status when attempting to add to cart
-document.getElementById('addToCart').addEventListener('click', function(event) {
-    event.preventDefault();
+/*Checking login status when attempting to add to cart
+document.getElementsByClassName('addToCart').forEach(element => {
+addEventListener('click', function(event)
+    event.preventDefault(); }
 //If user is logged in: add to cart. Else, display message and direct to login page
     if(localStorage.user) {
         //add to cart function here
@@ -35,4 +36,15 @@ document.getElementById('addToCart').addEventListener('click', function(event) {
     window.confirm("In order of adding products to your cart, you must log in or sign up.");
     window.location.href='../HTMLFiles/Login.html';
 });
+*/
+//forsøg på at få add-to-cart error til at virke
+function cartError(event) {
+    event.preventDefault();
+    alert(1);
+}
+
+document.getElementsByClassName('addToCart').forEach(element => {
+    element.addEventListener('click', cartError);
+});
+
 
