@@ -1,50 +1,46 @@
 //checking login status when clicking profile logo in header
-document.getElementById('profile').addEventListener('click', function(event) {
+function userLoginCheck(event) {
     event.preventDefault();
 
-    //check if user is logged in; login stored as global token in localstorage
     if(localStorage.user) {
         location.href = "../HTMLFiles/Profile.html";
-        return; //cuts off the remainder of the if/else statement. If user isn't logged in, goes straight login.html below
+        return;
     }
+    location.href = "../HTMLFiles/Login.html"
 
-    location.href = "../HTMLFiles/Login.html";
-});
-console.log("CheckLogin.js loaded succesfully");
+};
+//Adding an event listener to the ID profile - ie. the profile logo in the navigation bar
+document.getElementById('profile').addEventListener('click', userLoginCheck);
 
-//checking login status when clicking cart logo in header
-document.getElementById('cart').addEventListener('click', function(event) {
+
+
+//Validating whether or not the user is logged in upon user attempting to access the Shopping Cart
+function loginCartCheck(event) {
     event.preventDefault();
 
     if(localStorage.user) {
-        location.href="../HTMLFiles/Shoppingcart.html";
+        location.href = "../HTMLFiles/Shoppingcart.html";
         return;
     }
-    location.href = "../HTMLFiles/LoginCart.html";
+    location.href = "../HTMLFiles/LoginCart.html"
 
-});
+};
+//Adding event listener to the ID 'cart'. Listening for whenever 'cart' is clicked, and then executing the function above
+document.getElementById('cart').addEventListener('click', loginCartCheck);
 
-/*Checking login status when attempting to add to cart
-document.getElementsByClassName('addToCart').forEach(element => {
-addEventListener('click', function(event)
-    event.preventDefault(); }
-//If user is logged in: add to cart. Else, display message and direct to login page
-    if(localStorage.user) {
-        //add to cart function here
-        return;
-    }
-    window.confirm("In order of adding products to your cart, you must log in or sign up.");
-    window.location.href='../HTMLFiles/Login.html';
-});
-*/
-//forsøg på at få add-to-cart error til at virke
+//Checking login status when attempting to add to cart
 function cartError(event) {
     event.preventDefault();
-    alert(1);
-}
+    confirm("In order of adding products to your cart, you must log in or sign up.");
+    location.href='../HTMLFiles/Login.html';
 
-document.getElementsByClassName('addToCart').forEach(element => {
+};
+//Adding an event listener to each instance of the class 'addToCart' in the html - ie. all the add to cart buttons
+Array.from(document.getElementsByClassName('addToCart')).forEach(element => {
     element.addEventListener('click', cartError);
 });
+
+//Checking that everything is loading as it should
+console.log("Login check script successfully loaded.")
 
 
