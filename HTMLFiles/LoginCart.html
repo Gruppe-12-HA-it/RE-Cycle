@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Style.css">
+    <meta charset="UTF-8">
+    <title>RE:CYCLE - Login</title>
+
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="../Images/Logo.png" class="LogoImg" alt="logo.png" height="42" width="180">
+    </a>
+    <br/>
+    <script src="..\JavascriptFiles\Menu.js"></script>
+</header>
+<p style="text-align: center; font-size: 200%;">In order of checking your cart, you must be logged in.</p>
+<h1>Log in:</h1>
+
+<form name="user_login">
+    <!--onsubmit="return validate() action="?"-->
+
+    <input type="text" id="username" value="" Placeholder="Enter username" required/>
+    <br/>
+    <br/>
+
+    <input type="password" id="password" value="" placeholder="Enter password" required/>
+
+    <br/>
+    <br/>
+
+    <button type="submit" onclick="validate()" style="cursor: pointer;" > Submit </button>
+    <br/>
+    <br/>
+    <button type="Submit" style="cursor: pointer;" > Forgotten password </button>
+
+    <h4> Don't have an account?</h4>
+
+    <button type="Submit" style="cursor: pointer;" > Register </button>
+
+
+
+</form>
+
+<script type="application/x-javascript" src="../JavascriptFiles/Login.js"> </script>
+<script src="..\JavascriptFiles\CheckLogin.js"></script>
+</body>
+</html>
