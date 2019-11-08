@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="../Style.css">
     <meta charset="UTF-8">
     <title>RE:CYCLE - Products</title>
-
 </head>
 <header>
     <a href="index.html">
@@ -19,9 +18,20 @@
 
 <div id="filter">
     <!--Associated Label gøgl her skal også undersøges-->
-    <input id="mensFilter" class="filter" type="checkbox" name="gender" value="male"> Men's Bikes
-    <input id="womensFilter" class="filter" type="checkbox" name="gender" value="female"> Women's Bikes
-    <input id="childrensFilter" class="filter" type="checkbox" name="gender" value="other"> Children's Bikes
+    <label>
+        <input type="checkbox" checked id="men-filter" />
+        men-filter
+    </label>
+
+    <label>
+        <input type="checkbox" checked id="women-filter" />
+        women-filter
+    </label>
+
+    <label>
+        <input type="checkbox" checked id="children-filter" />
+        children-filter
+    </label>
 </div>
 <div id="productPage">
     <div id="mens">
@@ -36,7 +46,7 @@
         </div>
         <br/>
             <div class="card">
-                <img src="../ProductImages/MBKHerreCykel/MBKHerreCykel.png" alt="MBK Herrecykel" style="width:100%"
+                <img src="../ProductImages/MBKHerreCykel/MBKHerreCykel.png" alt="MBK Herrecykel" style="width:100%">
                 <h1>MBK Herrecykel</h1>
                 <p class="price">1337 kr.</p>
                 <p>Centurion herrecykel fra 2016 - fin stand, 7 gear</p>
@@ -106,6 +116,5 @@
 
 <!--Alle script directory errors bliver fikset senere af Mig (Sebastian)-->
 <script src="..\JavascriptFiles\CheckLogin.js"></script>
-<script src="../JavascriptFiles/Filter.js"></script>
 </body>
 </html>
