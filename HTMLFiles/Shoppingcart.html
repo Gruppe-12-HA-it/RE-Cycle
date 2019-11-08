@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="../Style.css">
     <meta charset="UTF-8">
     <title>RE:CYCLE - Cart</title>
-
+<script src="../JavascriptFiles/Shoppingcart.js"></script>
+    <script src="..\JavascriptFiles\CheckLogin.js"></script>
 </head>
 <body>
 <header>
@@ -15,8 +16,33 @@
     </a>
 <br/>
     <script src="..\JavascriptFiles\Menu.js"></script>
+
 </header>
-<p></p>
-<script src="..\JavascriptFiles\CheckLogin.js"></script>
+
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">Item</span>
+        <span class="cart-price cart-header cart-column">Price</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">Check Out</button>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
