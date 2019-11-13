@@ -44,6 +44,7 @@ Array.from(document.getElementsByClassName('addToCart')).forEach(element => {
 
 
 
+//FILTER FUNCTION:
 var mensFilter = document.getElementById('mensFilter');
 var womensFilter = document.getElementById('womensFilter');
 var childrensFilter = document.getElementById('childrensFilter');
@@ -55,6 +56,9 @@ function handleChange() {
 }
 [mensFilter, womensFilter, childrensFilter].forEach(element => element.addEventListener('change', handleChange));
 
-console.log("Login check script successfully loaded.")
+
+
+//checking for successful load of script
+console.log("Script successfully loaded.");
 
 
