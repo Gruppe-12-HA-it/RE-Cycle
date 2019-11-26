@@ -5,13 +5,17 @@ Body {
 /*Setting fonts for the different text types on the website - making sure to have a uniform design throughout the page*/
 p {
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 100;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
     font-weight: 300;
-
 }
 /*Adding the logo*/
 .LogoImg {
@@ -44,7 +48,6 @@ li a {
     text-decoration: none;
 
 }
-
 /*Styling for the specific links in the menu, including hover to change color,
 all based on the different ID's attached to the HTML code.*/
 #products {
@@ -131,13 +134,12 @@ Article {
     align-items: center;
     justify-content: center;}
 
-    .banner-btn {
-        font-size: 1rem;
-        background: white;
-        color: #111111;
-        cursor: pointer;
-        border: 1px solid
-
+.banner-btn {
+    font-size: 1rem;
+    background: white;
+    color: #111111;
+    cursor: pointer;
+    border: 1px solid;
     }
 .banner-title {
     color: black;
@@ -145,26 +147,32 @@ Article {
 }
 
 /*Styling of the mens, womens and childrens tags on the Products page*/
-#childrens {
+.GenderTitle {
     text-align: center;
 }
-#mens {
-    float: left;
-    padding-left: 110px;
-}
-#womens {
-    float: right;
-    padding-right: 110px;
+
+.productsSub {
+    padding: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-/* Products */
-.card {
-    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+.childrens,
+.mens,
+.womens {
+    display: flex;
+    flex-direction: column;
+}
+
+.Menscard,
+.Womenscard,
+.Childrenscard {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: auto;
     text-align: center;
     font-family: arial;
-
+    margin-top: 12px;
 }
 
 .price {
@@ -172,7 +180,7 @@ Article {
     font-size: 28px;
 }
 
-.card button {
+.Menscard button, .Womenscard button, .Childrenscard button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -184,8 +192,9 @@ Article {
     font-size: 18px;
 }
 
-.card button:hover {
+.Menscard button:hover, .Womenscard button:hover, .Childrenscard button:hover {
     opacity: 0.7;
 }
+
 
 
