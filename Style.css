@@ -150,37 +150,43 @@ Article {
 .GenderTitle {
     text-align: center;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+}
+h1.SubheaderProducts {
+    text-align: center;
+}
 .productsSub {
-    padding: 48px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left:256px;
+    padding-right:256px;
+    flex-wrap: wrap;
 }
-
-.childrens,
-.mens,
-.womens {
-    display: flex;
-    flex-direction: column;
+.ProductCard img {
+    max-width:300px;
+    max-height:200px;
 }
-
-.Menscard,
-.Womenscard,
-.Childrenscard {
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+.ProductCard {
+    box-shadow: 0px 5px 6px 4px rgba(0, 0, 0, 0.2);
     max-width: 300px;
     text-align: center;
     font-family: arial;
     margin-top: 12px;
+    margin-bottom: 72px;
+    margin-left:36px;
+    margin-right:36px;
+    flex-basis: 200%;
 }
 
-.price {
-    color: grey;
-    font-size: 28px;
-}
-
-.Menscard button, .Womenscard button, .Childrenscard button {
+.ProductCard button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -191,10 +197,13 @@ Article {
     width: 100%;
     font-size: 18px;
 }
-
-.Menscard button:hover, .Womenscard button:hover, .Childrenscard button:hover {
+.ProductCard button:hover {
     opacity: 0.7;
 }
 
-
+#filter {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
 
