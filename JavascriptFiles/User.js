@@ -1,3 +1,7 @@
+var allUsers = [];
+
+document.getElementById("signUp").addEventListener("click", checkInputs);
+
 class User {
         constructor(firstName, lastName, email, phoneNumber, password, id) {
             this.firstName = firstName;
@@ -9,6 +13,22 @@ class User {
         }
 }
 
+/* function createAdminLogin() {
+    var adminLogin = new User(
+        "Lucas",
+        "Simper",
+        "admin",
+        "41825833",
+        "admin",
+        "0");
+
+    console.log(adminLogin);
+    localStorage.getItem(allUsers);
+    allUsers.push(adminLogin);
+    localStorage.setItem("allUsers", JSON.stringify(adminLogin));
+    console.log(JSON.parse(localStorage.getItem("allUsers")));
+}
+*/
 var idNumber = 0;
 
 function increment(){
@@ -16,10 +36,6 @@ function increment(){
     idNumber ++;
     return idNumber;
 }
-
-var allUsers = [];
-
-document.getElementById("signUp").addEventListener("click", checkInputs);
 
 function checkInputs() {
 
@@ -69,8 +85,7 @@ function checkInputs() {
 
 //createuser
 
-function createUser(event) {
-    event.preventDefault();
+function createUser() {
     increment();
 
     var userObj = new User(
@@ -82,6 +97,8 @@ function createUser(event) {
         userObj.id = idNumber;
 
         console.log(userObj);
+
+        localStorage.getItem("allUsers");
 
         allUsers.push(userObj);
 

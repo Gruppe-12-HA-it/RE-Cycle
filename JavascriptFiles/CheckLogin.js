@@ -1,8 +1,26 @@
+// Lucas prøver at fixe bugs
+localStorage.setItem("loggedIn", "false");
+
+function isLoggedInProfile() {
+    if (localStorage.getItem("loggedIn") === "true") {
+    }
+    else {
+        location.href = "../HTMLFiles/Login.html";
+    }
+}
+function isLoggedInCart() {
+    if (localStorage.getItem("loggedIn") === "true") {
+    }
+    else{
+        location.href = "../HTMLFiles/LoginCart.html";
+    }
+}
+
 //checking login status when clicking profile logo in header
 function userLoginCheck(event) {
     event.preventDefault();
 
-    if (localStorage.user) {
+    if (localStorage.getItem("loggedIn") === "true") {
         location.href = "../HTMLFiles/Profile.html";
         return;
     }
@@ -15,10 +33,10 @@ document.getElementById("profile").addEventListener("click", userLoginCheck);
 function loginCartCheck(event) {
     event.preventDefault();
 
-    if (localStorage.user) {
+    if (localStorage.getItem("loggedIn") === "true") {
         location.href = "../HTMLFiles/Shoppingcart.html";
-        return;
     }
+    else
     location.href = "../HTMLFiles/LoginCart.html";
 }
 //Adding event listener to the ID 'cart'. Listening for whenever 'cart' is clicked, and then executing the function above
