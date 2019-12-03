@@ -10,12 +10,17 @@ var adminEmail = "admin";
 var adminPassword = "admin";
 
 
-document.getElementById("Login!").addEventListener("click", checkLogin, createAdminLogin);
+document.getElementById("Login!").addEventListener("click", checkLogin);
 
 function checkLogin (event) {
     event.preventDefault();
     console.log("works so far");
     let userExists = false;
+
+    if (localStorage.getItem("allUsers" == null)){
+        createAdminLogin();
+        console.log("Admin Login Created")
+    }
 
      if (eMail.value === adminEmail && password.value === adminPassword) {
         alert("Hello Admin");

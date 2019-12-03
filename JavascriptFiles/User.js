@@ -1,5 +1,3 @@
-var allUsers = [];
-
 document.getElementById("signUp").addEventListener("click", checkInputs);
 
 class User {
@@ -13,7 +11,7 @@ class User {
         }
 }
 
-/* function createAdminLogin() {
+function createAdminLogin() {
     var adminLogin = new User(
         "Lucas",
         "Simper",
@@ -23,12 +21,12 @@ class User {
         "0");
 
     console.log(adminLogin);
-    localStorage.getItem(allUsers);
+    localStorage.getItem("allUsers");
     allUsers.push(adminLogin);
-    localStorage.setItem("allUsers", JSON.stringify(adminLogin));
+    localStorage.setItem("allUsers", JSON.stringify(all));
     console.log(JSON.parse(localStorage.getItem("allUsers")));
 }
-*/
+
 var idNumber = 0;
 
 function increment(){
@@ -95,7 +93,6 @@ function createUser() {
         document.getElementById("phoneNumber").value,
         document.getElementById("password").value);
         userObj.id = idNumber;
-
         console.log(userObj);
 
         localStorage.getItem("allUsers");
