@@ -209,4 +209,7 @@ h1.SubheaderProducts {
     margin-bottom: 32px;
     text-align: center;
 }
-
+.price {
+    color: grey;
+    font-size: 28px;
+        }

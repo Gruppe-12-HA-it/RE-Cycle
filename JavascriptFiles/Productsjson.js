@@ -43,7 +43,7 @@ function createProductCard(product) {
             <h1>${product.name}</h1>
             <p>${product.description}</p>
             <p class="price">${product.price}</p>
-            <p><button type="button" class="addToCard">Add to Cart</button></p>
+            <p><button type="button" class="addToCard" data-id="${product.id}">Add to Cart</button></p>
         </div>
     `;
 }
