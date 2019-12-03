@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Style.css">
@@ -20,34 +21,16 @@
 
     <h1>Log in:</h1>
 
-    <form name="user_login">
+<form id="LoginForm">
 
-        <input type="text" id="username" value="" Placeholder="Enter username"/>
-        <br/>
-        <br/>
-
-        <input type="password" id="password" value="" placeholder="Enter password"/>
-
-        <br/>
-        <br/>
-
-        <button type="submit" onclick="validate()" style="cursor: pointer;" > Submit </button>
-        <br/>
-        <br/>
-        <button type="Submit" style="cursor: pointer;" > Forgotten password </button>
-
-        <h4> Don't have an account?</h4>
-
-        <a href="Register.html">Sign up</a>
-
-
-
-
-    </form>
-
-    <script type="application/x-javascript" src="../JavascriptFiles/Login.js"> </script>
+<br>
+<input id="enteredEmail" placeholder="Email" type="text"/><br>
+<br>
+<input id="enteredPassword" placeholder="Password" type="text"/><br>
+<input id="Login!" type="submit" value="Login!"  /> <br>
+</form>
 
 <!--Alle script directory errors bliver fikset senere af Mig (Sebastian)-->
-<script src="..\JavascriptFiles\CheckLogin.js"></script>
 </body>
+<script src="../JavascriptFiles/Login.js"></script>
 </html>
