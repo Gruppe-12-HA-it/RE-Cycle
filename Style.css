@@ -202,13 +202,11 @@ h1.SubheaderProducts {
 }
 
 #ConceptImage {
- float: right;
-
+    float: right;
+}
 #filter {
     margin-top: 32px;
     margin-bottom: 32px;
     text-align: center;
 }
 
-
-}

@@ -85,5 +85,4 @@ function genderFilter() {
         displayAll();
     }
 }
-
 displayAll();
