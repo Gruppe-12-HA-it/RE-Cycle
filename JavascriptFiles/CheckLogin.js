@@ -36,28 +36,3 @@ function cartError(event) {
 Array.from(document.getElementsByClassName("addToCart")).forEach(element => {
     element.addEventListener("click", cartError);
 });
-
-//Checking that everything is loading as it should
-
-//FILTER FUNCTION:
-var mensFilter = document.getElementById("mensFilter");
-var womensFilter = document.getElementById("womensFilter");
-var childrensFilter = document.getElementById("childrensFilter");
-
-function handleChange() {
-    document.getElementById("mens").style.display = mensFilter.checked
-        ? "block"
-        : "none";
-    document.getElementById("womens").style.display = womensFilter.checked
-        ? "block"
-        : "none";
-    document.getElementById("childrens").style.display = childrensFilter.checked
-        ? "block"
-        : "none";
-}
-[mensFilter, womensFilter, childrensFilter].forEach(element =>
-    element.addEventListener("change", handleChange)
-);
-
-//checking for successful load of script
-console.log("Script successfully loaded.");

@@ -1,113 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Style.css">
     <meta charset="UTF-8">
     <title>RE:CYCLE - Products</title>
 </head>
+
 <body>
 <header>
     <a href="index.html">
         <!--suppress CheckImageSize -->
         <img src="../Images/Logo.png" class="LogoImg" alt="logo.png" height="42" width="180">
     </a>
-<br/>
+    <br/>
     <!--Alle script directory errors bliver fikset senere af Mig (Sebastian)-->
     <script src="../JavascriptFiles/Menu.js"></script>
 </header>
-
 <div id="filter">
     <!--Associated Label gøgl her skal også undersøges-->
     <label>
-        <input type="checkbox" checked id="mensFilter" />
+        <input type="checkbox" id="mensFilter" />
         Mens
     </label>
 
     <label>
-        <input type="checkbox" checked id="womensFilter" />
+        <input type="checkbox" id="womensFilter" />
         Womens
     </label>
 
     <label>
-        <input type="checkbox" checked id="childrensFilter" />
+        <input type="checkbox" id="childrensFilter" />
         Childrens
     </label>
 </div>
-<div class="productsSub">
-    <div class="mens" id="mens">
-        <h1 class="GenderTitle">Men's Bikes</h1>
-        <div class="Menscard">
-            <img src="../ProductImages/CenturionHerreCykel/CenturionHerreCykel.png" alt="Centurion Herrecykel" style="width:100%">
-            <h1>Centurion Herrecykel</h1>
-            <p class="price">1337 kr.</p>
-            <p>Centurion herrecykel fra 2016 - fin stand, 7 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-        <br/>
-        <div class="Menscard">
-            <img src="../ProductImages/MBKHerreCykel/MBKHerreCykel.png" alt="MBK Herrecykel" style="width:100%">Kthe "
-            <h1>MBK Herrecykel</h1>
-            <p class="price">1337 kr.</p>
-            <p>Centurion herrecykel fra 2016 - fin stand, 7 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-        <br/>
-        <div class="Menscard">
-            <img src="../ProductImages/MustangHerreCykel/MustangHerreCykel.png" alt="Mustang Herrecykel" style="width:100%">
-            <h1>Mustang Herrecykel</h1>
-            <p class="price">1337 kr.</p>
-            <p>Centurion herrecykel fra 2016 - fin stand, 7 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-        <br/>
-    </div>
-    <div class="womens" id="womens">
-        <h1 class="GenderTitle">Women's Bikes</h1>
-        <div class="Womenscard">
-            <img src="../ProductImages/DameCykel/damecykelnostalgie2_1024x1024.jpg" alt="Damecykel" style="width:100%">
-            <h1>Damecykel, Ukendt mærke</h1>
-            <p class="price">1337 kr.</p>
-            <p>Damecykel fra 2016 - fin stand, brugt få gange, 3 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-        <br/>
-        <div class="Womenscard">
-            <img src="../ProductImages/DameCykel/miveradamecykel1_1024x1024.jpg" alt="Mivera Damecykel" style="width:100%">
-            <h1>Mivera Damecykel</h1>
-            <p class="price">1337 kr.</p>
-            <p>Mivera damecykel fra 2016 - fin stand, 3 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-        <br/>
-        <div class="Womenscard">
-            <img src="../ProductImages/DameCykel/Damecykel%20japansk.jpg" alt="Mivera Damecykel" style="width:100%">
-            <h1>Mivera Damecykel</h1>
-            <p class="price">1337 kr.</p>
-            <p>Japansk damecykel fra 2017 - fin stand, 3 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-    </div>
-    <div class="childrens" id="childrens">
-        <h1 class="GenderTitle">Children's Bikes</h1>
-        <div class="Childrenscard">
-            <img src="../ProductImages/Børnecykel/bornecykel-16tommer-1050x700.jpg" alt="Børnecykel" style="width:100%">
-            <h1>Børnecykel, ukendt mærke</h1>
-            <p class="price">1337 kr.</p>
-            <p>Ukendt mærke børnecykel fra 2016 - fin stand, 5 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-        <br/>
-        <div class="Childrenscard">
-            <img src="../ProductImages/Børnecykel/børnecykel2.jpg" alt="Børnecykel" style="width:100%">
-            <h1>Børnecykel, ukendt mærke</h1>
-            <p class="price">1337 kr.</p>
-            <p>Ukendt mærke børnecykel fra 2016 - fin stand, 1 gear</p>
-            <p><button class="addToCart">Add to Cart</button></p>
-        </div>
-    </div>
+<h1 class="SubheaderProducts">All Bikes</h1>
+<!--loader json produkter ind herfra-->
+<div id="productsApp" class="productsSub">
+    <script src="../JavascriptFiles/Productsjson.js">
+    </script>
 </div>
-<!--Alle script directory errors bliver fikset senere af Mig (Sebastian)-->
 <script src="../JavascriptFiles/CheckLogin.js"></script>
 </body>
+
 </html>
