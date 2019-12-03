@@ -6,7 +6,7 @@
       "image":"../ProductImages/CenturionHerreCykel/CenturionHerreCykel.png",
       "description":"Centurion herrecykel fra 2016 - fin stand, 7 gear",
       "gender":"Mens",
-      "productID":1
+      "id":1
     },
     {
       "name":"MBK <br/> Herrecykel",
@@ -14,7 +14,7 @@
       "image":"../ProductImages/MBKHerreCykel/MBKHerrecykel.png",
       "description":"MBK herrecykel fra 2019 - fin stand, 7 gear",
       "gender":"Mens",
-      "productID":2
+      "id":2
     },
     {
       "name":"Mustang Herrecykel",
@@ -22,7 +22,7 @@
       "image":"../ProductImages/MustangHerreCykel/MustangHerreCykel.png",
       "description":"Mustang herrecykel fra 2018 - fin stand, 9 gear",
       "gender":"Mens",
-      "productID":3
+      "id":3
     },
     {
       "name":"Damecykel Ukendt mærke",
@@ -30,7 +30,7 @@
       "image":"../ProductImages/DameCykel/damecykelnostalgie2_1024x1024.jpg",
       "description":"Damecykel fra 2016 - ikke brugt, 3 gear",
       "gender":"Womens",
-      "productID":4
+      "id":4
     },
     {
       "name":"Japansk Custom Damecykel",
@@ -38,7 +38,7 @@
       "image":"../ProductImages/DameCykel/Damecykel%20japansk.jpg",
       "description":"Japansk damecykel fra 2017 - fin stand, 3 gear",
       "gender":"Womens",
-      "productID":5
+      "id":5
     },
     {
       "name":"Mivera <br/> Damecykel",
@@ -46,7 +46,7 @@
       "image":"../ProductImages/DameCykel/miveradamecykel1_1024x1024.jpg",
       "description":"Mivera damecykel fra 2016 - fin stand, 3 gear",
       "gender":"Womens",
-      "productID":6
+      "id":6
     },
     {
       "name":"Børnecykel ukendt mærke",
@@ -54,7 +54,7 @@
       "image":"../ProductImages/Børnecykel/bornecykel-16tommer-1050x700.jpg",
       "description":"Ukendt mærke børnecykel fra 2016 - fin stand, 5 gear",
       "gender":"Childrens",
-      "productID":7
+      "id":7
     },
     {
       "name":"Børnecykel ukendt mærke",
@@ -62,7 +62,7 @@
       "image":"../ProductImages/Børnecykel/børnecykel2.jpg",
       "description":"Ukendt mærke børnecykel fra 2016 - fin stand, 3 gear",
       "gender":"Childrens",
-      "productID":8
+      "id":8
     },
     {
       "name":"Børnecykel ukendt mærke",
@@ -70,7 +70,7 @@
       "image":"../ProductImages/Børnecykel/børnecykel2.jpg",
       "description":"Ukendt mærke børnecykel fra 2016 - fin stand, 1 gear",
       "gender":"Childrens",
-      "productID":9
+      "id":9
     }
 
 
