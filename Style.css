@@ -5,13 +5,17 @@ Body {
 /*Setting fonts for the different text types on the website - making sure to have a uniform design throughout the page*/
 p {
     font-style: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 100;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
     font-weight: 300;
-
 }
 /*Adding the logo*/
 .LogoImg {
@@ -44,7 +48,6 @@ li a {
     text-decoration: none;
 
 }
-
 /*Styling for the specific links in the menu, including hover to change color,
 all based on the different ID's attached to the HTML code.*/
 #products {
@@ -131,13 +134,12 @@ Article {
     align-items: center;
     justify-content: center;}
 
-    .banner-btn {
-        font-size: 1rem;
-        background: white;
-        color: #111111;
-        cursor: pointer;
-        border: 1px solid
-
+.banner-btn {
+    font-size: 1rem;
+    background: white;
+    color: #111111;
+    cursor: pointer;
+    border: 1px solid;
     }
 .banner-title {
     color: black;
@@ -145,34 +147,46 @@ Article {
 }
 
 /*Styling of the mens, womens and childrens tags on the Products page*/
-#childrens {
+.GenderTitle {
     text-align: center;
 }
-#mens {
-    float: left;
-    padding-left: 110px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
 }
-#womens {
-    float: right;
-    padding-right: 110px;
+h1.SubheaderProducts {
+    text-align: center;
 }
-
-/* Products */
-.card {
-    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+.productsSub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:256px;
+    padding-right:256px;
+    flex-wrap: wrap;
+}
+.ProductCard img {
+    max-width:300px;
+    max-height:200px;
+}
+.ProductCard {
+    box-shadow: 0px 5px 6px 4px rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: auto;
     text-align: center;
     font-family: arial;
-
+    margin-top: 12px;
+    margin-bottom: 72px;
+    margin-left:36px;
+    margin-right:36px;
+    flex-basis: 200%;
 }
 
-.price {
-    color: grey;
-    font-size: 28px;
-}
-
-.card button {
+.ProductCard button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -183,9 +197,18 @@ Article {
     width: 100%;
     font-size: 18px;
 }
-
-.card button:hover {
+.ProductCard button:hover {
     opacity: 0.7;
 }
 
+#ConceptImage {
+ float: right;
 
+#filter {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+
+}
