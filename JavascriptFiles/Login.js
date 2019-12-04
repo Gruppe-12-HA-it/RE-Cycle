@@ -17,7 +17,7 @@ function checkLogin (event) {
     console.log("works so far");
     let userExists = false;
 
-    if (localStorage.getItem("allUsers" == null)){
+    if (existingUser === null){
         createAdminLogin();
         console.log("Admin Login Created")
     }

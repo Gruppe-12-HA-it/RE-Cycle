@@ -1,17 +1,17 @@
-document.getElementById("signUp").addEventListener("click", checkInputs);
-
 class User {
-        constructor(firstName, lastName, email, phoneNumber, password, id) {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.email = email;
-            this.phoneNumber = phoneNumber;
-            this.password = password;
-            this.id = id;
-        }
+    constructor(firstName, lastName, email, phoneNumber, password, id) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.id = id;
+    }
 }
 
-function createAdminLogin() {
+if (localStorage.getItem("allUsers") == null) {
+    var allUsers = [];
+
     var adminLogin = new User(
         "Lucas",
         "Simper",
@@ -20,11 +20,13 @@ function createAdminLogin() {
         "admin",
         "0");
 
-    console.log(adminLogin);
-    localStorage.getItem("allUsers");
     allUsers.push(adminLogin);
-    localStorage.setItem("allUsers", JSON.stringify(all));
-    console.log(JSON.parse(localStorage.getItem("allUsers")));
+    localStorage.setItem("allUsers", JSON.stringify(allUsers));
+    //console.log(JSON.parse(localStorage.getItem("allUsers")));
+    console.log("it works");
+}
+else {
+    console.log("it doesnt work");
 }
 
 var idNumber = 0;
@@ -81,28 +83,27 @@ function checkInputs() {
 
 }
 
-//createuser
+document.getElementById("signUp").addEventListener("click", checkInputs);
 
 function createUser() {
-    increment();
-
-    var userObj = new User(
+    // event.preventDefault();
+    //implement increment id
+    let htmlLogin = new User(
         document.getElementById("firstName").value,
         document.getElementById("lastName").value,
         document.getElementById("email").value,
         document.getElementById("phoneNumber").value,
-        document.getElementById("password").value);
-        userObj.id = idNumber;
-        console.log(userObj);
+        document.getElementById("password").value
+    );
+    htmlLogin.id = 3;
 
-        localStorage.getItem("allUsers");
-
-        allUsers.push(userObj);
-
-    localStorage.setItem("allUsers", JSON.stringify(userObj));
-
-    console.log(JSON.parse(localStorage.getItem("allUsers")));
-
-    alert("Thank you for creating a user! We will now redirect you to our homepage!");
-
+    allUsers = JSON.parse(localStorage.getItem("allUsers"));
+    allUsers.push(htmlLogin);
+    localStorage.setItem("allUsers", JSON.stringify(allUsers));
+    console.log(allUsers);
+    //console.log(allUsers[1]);
+    alert(
+        "Thank you for creating a user! We will now redirect you to our homepage!"
+    );
+    location.href = "../HTMLFiles/Login.html";
 }
