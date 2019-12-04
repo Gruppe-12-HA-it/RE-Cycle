@@ -4,12 +4,6 @@ var existingUser = JSON.parse(localStorage.getItem("allUsers"));
 var currentUserID = ("");
 
 
-
-//Admin login
-var adminEmail = "admin";
-var adminPassword = "admin";
-
-
 document.getElementById("Login!").addEventListener("click", checkLogin);
 
 function checkLogin (event) {
@@ -17,16 +11,11 @@ function checkLogin (event) {
     console.log("works so far");
     let userExists = false;
 
+
     if (existingUser === null){
         createAdminLogin();
-        console.log("Admin Login Created")
+        console.log("Admin Login Created");
     }
-
-     if (eMail.value === adminEmail && password.value === adminPassword) {
-        alert("Hello Admin");
-        userExists = true;
-    }
-
     else if (eMail.value === existingUser.email && password.value === existingUser.password) {
         userExists = true;
         currentUserID = existingUser.id;
