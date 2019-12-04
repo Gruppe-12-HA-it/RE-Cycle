@@ -97,5 +97,5 @@ function createUser() {
     alert(
         "Thank you for creating a user! We will now redirect you to our homepage!"
     );
-    location.replace = "../HTMLFiles/Login.html";
+    window.location = "../HTMLFiles/Login.html";
 }
