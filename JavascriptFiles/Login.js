@@ -1,7 +1,9 @@
 var eMail = document.getElementById("enteredEmail");
 var password = document.getElementById("enteredPassword");
-var existingUser = JSON.parse(localStorage.getItem("allUsers"))
-// console.log(existingUser);
+var existingUser = JSON.parse(localStorage.getItem("allUsers"));
+var currentUserID = ("");
+
+
 
 //Admin login
 var adminEmail = "admin";
@@ -15,24 +17,29 @@ function checkLogin (event) {
     console.log("works so far");
     let userExists = false;
 
-     if (eMail.value == adminEmail && password.value == adminPassword) {
+    if (existingUser === null){
+        createAdminLogin();
+        console.log("Admin Login Created")
+    }
+
+     if (eMail.value === adminEmail && password.value === adminPassword) {
         alert("Hello Admin");
         userExists = true;
     }
 
-  /*  else if (eMail.value == existingUser[i].eMail && password.value == existingUser[i].password) {
-        alert("Hello user")
+    else if (eMail.value === existingUser.email && password.value === existingUser.password) {
         userExists = true;
-        document.location = "GUI.html"
+        currentUserID = existingUser.id;
+        console.log(currentUserID);
+        localStorage.setItem("loggedIn", "true");
     }
 
-    else if (eMail.value == existingUser[i].eMail && password.value != existingUser[i].password) {
+    else if (eMail.value === existingUser.email && password.value !== existingUser.password) {
         alert("Wrong password- try again!");
         userExists = true;
     }
 
-    */
-    if (userExists == false) {
+    if (userExists === false) {
         alert ("It seems like you haven't created a user yet- we will direct you to our sign up page!");
         location.href = "../HTMLFiles/Signup.html";
     }
