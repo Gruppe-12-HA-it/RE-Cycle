@@ -30,6 +30,7 @@ function checkLogin (event) {
 
     if (userExists2 === true) {
         console.log("Email and PW correct");
+        localStorage.setItem("currentUserEmail", eMail.value);
         localStorage.setItem("loggedIn", "true");
         location.href = "../HTMLFiles/index.html";
 

@@ -31,6 +31,12 @@ else {
 
 function checkInputs() {
 
+    var existingUser2 = JSON.parse(localStorage.getItem("allUsers"));
+    var foundUser2 = existingUser2.find(function (user) {
+        return user.email === document.getElementById("email").value
+    });
+    var existingUser2 = !!foundUser2;
+
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
     let email = document.getElementById("email").value;
@@ -39,6 +45,11 @@ function checkInputs() {
     let confirmPassword = document.getElementById("confirm_password").value;
 
     var passed = "true";
+
+    if (existingUser2 === true){
+        passed = "false";
+        alert("That email is already registered to an account")
+    }
 
     if (firstName.length < 1) {
         passed = "false";
@@ -75,10 +86,9 @@ function checkInputs() {
 
 }
 
-document.getElementById("signUp").addEventListener("click", createUser);
+document.getElementById("signUp").addEventListener("click", checkInputs);
 
-function createUser(event) {
-    event.preventDefault();
+function createUser() {
     var idLength = JSON.parse(localStorage.getItem("allUsers"));
 
     let htmlLogin = new User(
