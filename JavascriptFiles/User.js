@@ -18,23 +18,15 @@ if (localStorage.getItem("allUsers") == null) {
         "admin",
         "41825833",
         "admin",
-        "0");
+        "1");
 
     allUsers.push(adminLogin);
     localStorage.setItem("allUsers", JSON.stringify(allUsers));
     //console.log(JSON.parse(localStorage.getItem("allUsers")));
-    console.log("it works");
+    //console.log("it works");
 }
 else {
-    console.log("it doesnt work");
-}
-
-var idNumber = 0;
-
-function increment(){
-
-    idNumber ++;
-    return idNumber;
+    //console.log("it doesnt work");
 }
 
 function checkInputs() {
@@ -83,11 +75,12 @@ function checkInputs() {
 
 }
 
-document.getElementById("signUp").addEventListener("click", checkInputs);
+document.getElementById("signUp").addEventListener("click", createUser);
 
-function createUser() {
-    // event.preventDefault();
-    //implement increment id
+function createUser(event) {
+    event.preventDefault();
+    var idLength = JSON.parse(localStorage.getItem("allUsers"));
+
     let htmlLogin = new User(
         document.getElementById("firstName").value,
         document.getElementById("lastName").value,
@@ -95,15 +88,16 @@ function createUser() {
         document.getElementById("phoneNumber").value,
         document.getElementById("password").value
     );
-    htmlLogin.id = 3;
+    htmlLogin.id = idLength.length + 1;
 
     allUsers = JSON.parse(localStorage.getItem("allUsers"));
     allUsers.push(htmlLogin);
     localStorage.setItem("allUsers", JSON.stringify(allUsers));
     console.log(allUsers);
     //console.log(allUsers[1]);
+    location.href = "../HTMLFiles/Login.html";
     alert(
         "Thank you for creating a user! We will now redirect you to our homepage!"
     );
-    location.href = "../HTMLFiles/Login.html";
+
 }

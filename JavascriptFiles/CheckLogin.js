@@ -1,6 +1,4 @@
 // Lucas prøver at fixe bugs
-localStorage.setItem("loggedIn", "false");
-
 function isLoggedInProfile() {
     if (localStorage.getItem("loggedIn") === "true") {
     }

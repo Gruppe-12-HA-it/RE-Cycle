@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../Style.css">
     <meta charset="UTF-8">
     <title>RE:CYCLE - Cart</title>
-<script src="../JavascriptFiles/Shoppingcart.js"></script>
     <script src="..\JavascriptFiles\CheckLogin.js"></script>
 </head>
 <body>
@@ -22,31 +21,27 @@
     <script src="..\JavascriptFiles\Menu.js"></script>
 
 </header>
-
-<section class="container content-section">
-    <h2 class="section-header">CART</h2>
-    <div class="cart-row">
-        <span class="cart-item cart-header cart-column">Item</span>
-        <span class="cart-price cart-header cart-column">Price</span>
+<div class="Shopping-cart">
+    <div class="CartHeader">
+        <h2>Your Cart</h2>
     </div>
-    <div class="cart-items">
+    <div class="info">
+        <b id="ProductName">ProductName</b>
+        <b id="ProductPrice">Price</b>
+        <b id="Pristotal">Clear Product</b>
     </div>
-    <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$0</span>
+    <hr/>
+    <div id="productsInCart">
+    <script src="../JavascriptFiles/Shoppingcart.js">
+    </script>
     </div>
-    <button class="btn btn-primary btn-purchase" type="button">Check Out</button>
-</section>
-
-
-
-
-
-
-
-
-
-
-
+</div>
+<div class="checkout-button">
+    <button class="checkout" type="button">Check Out</button>
+</div>
+<br/>
+<div class="cartClearButton">
+    <button class="cartClear" id="cartClear" type="button">Clear Cart</button>
+</div>
 </body>
 </html>

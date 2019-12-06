@@ -6,7 +6,7 @@ const childrensFilter = document.getElementById("childrensFilter");
 
 let data = undefined;
 
-
+/*Denne funktion viser produkter baseret på den i funktionen definerede type - namely deres køn i dette tilfælde*/
 function display(type) {
     if (!data) {
         fetch(myProducts)
@@ -18,7 +18,7 @@ function display(type) {
                 display(type);
             });
         return;
-    }
+    } /*hvis data (defineret ovenfor) er undefined (false), vil denne fetche dataen fra JSON og definere som data.*/
 
     productsElement.innerHTML = "";
 
@@ -31,15 +31,15 @@ function display(type) {
         });
         return;
 
-    }
+    } /*Hele denne funktion er for at loade all products til at starte med, samt tilføje eventlisteners til knapperne - derfor if(!type), da type er undefined før filter aktiveres)*/
 
     data
         .filter(function(dataset) {
             return dataset.gender === type;
-        })
+        }) /*Filter på dataen jf. deres type defineret som gender fra JSON*/
         .forEach(function(product) {
             productsElement.innerHTML += createProductCard(product);
-        });
+        }); /*tager hvert instance fra ovenstående array af products og skriver dem ind i productsElement med createProductsCard(product)*/
     Array.from(document.querySelectorAll('button[data-id]')).forEach(function(button) {
         button.addEventListener('click', addToCart);
     });
