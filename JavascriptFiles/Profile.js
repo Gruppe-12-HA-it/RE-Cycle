@@ -17,10 +17,13 @@ function LogOut() {
 }
 
 function getCurrentUserInfo() {
+
+
+
   //  var foundUserProfile = existingUserProfiles.indexOf(function (user) {currentUserEmailProfile.value});
     // console.log(foundUserProfile);
 
-   var foundUserProfile = existingUserProfiles.indexOf(function (user) {
+  var foundUserProfile = existingUserProfiles.indexOf(function(user) {
         return user.email === currentUserEmailProfile.value;
     });
     console.log(foundUserProfile);
