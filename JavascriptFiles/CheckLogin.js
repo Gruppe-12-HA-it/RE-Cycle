@@ -1,5 +1,4 @@
 // Lucas prøver at fixe bugs
-
 function isLoggedInCart() {
     if (localStorage.getItem("loggedIn") === "true") {
     }

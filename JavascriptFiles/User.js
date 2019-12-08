@@ -35,7 +35,8 @@ function checkInputs() {
     var foundUser2 = existingUser2.find(function (user) {
         return user.email === document.getElementById("email").value
     });
-    var existingUser2 = !!foundUser2;
+        existingUser2 = !!foundUser2;
+
 
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
@@ -88,7 +89,8 @@ function checkInputs() {
 
 document.getElementById("signUp").addEventListener("click", checkInputs);
 
-function createUser() {
+function createUser(event) {
+    event.preventDefault();
     var idLength = JSON.parse(localStorage.getItem("allUsers"));
 
     let htmlLogin = new User(

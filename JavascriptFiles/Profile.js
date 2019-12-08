@@ -1,8 +1,8 @@
 if (localStorage.getItem("loggedIn") === "true") {
-    }
-    else {
-        location.href = "../HTMLFiles/Login.html";
-    }
+}
+else {
+    location.href = "../HTMLFiles/Login.html";
+}
 
 currentUserEmailProfile = localStorage.getItem("currentUserEmail");
 existingUserProfiles = JSON.parse(localStorage.getItem("allUsers"));
@@ -20,10 +20,10 @@ function getCurrentUserInfo() {
 
 
 
-  //  var foundUserProfile = existingUserProfiles.indexOf(function (user) {currentUserEmailProfile.value});
+    //  var foundUserProfile = existingUserProfiles.indexOf(function (user) {currentUserEmailProfile.value});
     // console.log(foundUserProfile);
 
-  var foundUserProfile = existingUserProfiles.indexOf(function(user) {
+    var foundUserProfile = existingUserProfiles.indexOf(function(user) {
         return user.email === currentUserEmailProfile.value;
     });
     console.log(foundUserProfile);
@@ -31,4 +31,3 @@ function getCurrentUserInfo() {
 
 
 }
-
