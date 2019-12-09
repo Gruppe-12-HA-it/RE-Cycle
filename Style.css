@@ -244,3 +244,98 @@ div.Shopping-cart p {
 #removeItemFromCart {
     margin-top: 14px;
 }
+
+.buttonLogOut {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #123C69;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px;
+    width: 125px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.buttonLogIn {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #123C69;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+  }
+
+.buttonCont {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #123C69;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonSignUp {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #123C69;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    position: absolute;
+    right: 941px;
+}
+
+input[type=textLogin] {
+    width: 21.7%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px #123C69;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 90%;
+}
+
+input[type=textCon] {
+    width: 21.7%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px #123C69;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 90%;
+}
+
+
+input[type='radio1'] {
+    height: 30px;
+    width: 30px;
+}
+
+textarea {
+    resize: none;
+    height: 100%;
+    width: 21.7%;
