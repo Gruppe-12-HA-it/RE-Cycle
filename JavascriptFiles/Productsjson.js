@@ -1,10 +1,11 @@
-const productsElement = document.getElementById("productsApp");
-const myProducts = "../products.json";
-const mensFilter = document.getElementById("mensFilter");
-const womensFilter = document.getElementById("womensFilter");
-const childrensFilter = document.getElementById("childrensFilter");
+//behøvede variabler defineres - specifikationer ud for
+const productsElement = document.getElementById("productsApp"); //elementet hvori produkter skrives ind
+const myProducts = "../products.json"; //stien til products.json defineres
+const mensFilter = document.getElementById("mensFilter"); // de tre filtre defineres
+const womensFilter = document.getElementById("womensFilter"); // --
+const childrensFilter = document.getElementById("childrensFilter"); // --
 
-let data = undefined;
+let data = undefined; //data defineres som undefined, så den kan fetches og ligges ind hvis den mangler
 
 /*Denne funktion viser produkter baseret på den i funktionen definerede type - namely deres køn i dette tilfælde*/
 function display(type) {
@@ -20,7 +21,7 @@ function display(type) {
         return;
     } /*hvis data (defineret ovenfor) er undefined (false), vil denne fetche dataen fra JSON og definere som data.*/
 
-    productsElement.innerHTML = "";
+    productsElement.innerHTML = ""; //sørger for at productsElement html elementet er tomt
 
     if (!type) {
         data.forEach(function(product) {
@@ -31,7 +32,8 @@ function display(type) {
         });
         return;
 
-    } /*Hele denne funktion er for at loade all products til at starte med, samt tilføje eventlisteners til knapperne - derfor if(!type), da type er undefined før filter aktiveres)*/
+    } /*Hele denne funktion er for at loade all products til at starte med,
+     samt tilføje eventlisteners til knapperne - derfor if(!type), da type er undefined før filter type defineres nedenfor)*/
 
     data
         .filter(function(dataset) {
@@ -42,7 +44,7 @@ function display(type) {
         }); /*tager hvert instance fra ovenstående array af products og skriver dem ind i productsElement med createProductsCard(product)*/
     Array.from(document.querySelectorAll('button[data-id]')).forEach(function(button) {
         button.addEventListener('click', addToCart);
-    });
+    }); //sørger for eventlisteners for addToCart
 }
 function addToCart() {
     console.log(this.dataset.id);
@@ -103,4 +105,4 @@ function genderFilter() {
         displayAll();
     }
 }
-displayAll();
+displayAll(); //funktionen displayAll bliver kørt, og produkterne loades ind.
