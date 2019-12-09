@@ -22,43 +22,29 @@
 
         <h1> Contact us </h1>
 
-        <br/>
-        Name
-        <br/>
-        <!--Label Issues bliver fikset af mig (Sebastian) på et senere tidspunkt-->
-        <input type="text" id="user_name" value="" placeholder="Type your name"/>
-        <br/>
+        <h4> Name: </h4>
+        <input type="textCon" id="user_name" value="" placeholder="Type your name"/>
         <br/>
 
-        How do you prefer to be contacted?
-        <br/>
-        <input type="radio" class="preferred_contact" value="By phone"/> By phone
-        <input type="radio" class="preferred_contact" value="By email"/> By email
-        <br/>
+        <h4> How do you prefer to be contacted? </h4>
+        <p> By phone <input type="radio" name="radio" value="By phone"/>
+            By email <input type="radio" name="radio" value="By email"/> </p>
+
+        <h4> Phone Number: </h4>
+        <input type="textCon" id="phone_number" value="" placeholder="Type your phone number"/>
+
+        <h4>E-mail: </h4>
+        <input type="textCon" id="e_mail" value="" placeholder="Type your email">
         <br/>
 
-
-        Phone Number
-        <br/>
-        <input type="text" id="phone_number" value="" placeholder="Type your phone number"/>
-        <br/>
-        <br/>
-
-        E-mail
-        <br/>
-        <input type="text" id="e_mail" value="" placeholder="Type your email">
-        <br/>
-        <br/>
-
-        What is it regarding?
-        <br>
+        <h4> What is it regarding? </h4>
         <!-- attribute errors skal undersøges-->
         <textarea type="text" rows="6" cols="30" id="_comments" value="">
      </textarea>
         <br/>
         <br/>
 
-        <button type="submit" onclick="validateContactInformation()" style="cursor: pointer;" > Submit </button>
+        <button type="submit" class="buttonCont" onclick="validateContactInformation()" style="cursor: pointer;" > Submit </button>
 
 
     </form>

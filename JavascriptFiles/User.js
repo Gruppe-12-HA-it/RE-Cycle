@@ -101,7 +101,7 @@ function checkInputs() {
 document.getElementById("signUp").addEventListener("click", checkInputs);
 
 function createUser() {
-    //event.preventDefault();
+   //event.preventDefault();
     var idLength = JSON.parse(localStorage.getItem("allUsers"));
 
     let htmlLogin = new User(
