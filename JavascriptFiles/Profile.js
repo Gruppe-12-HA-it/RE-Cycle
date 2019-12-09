@@ -1,3 +1,4 @@
+//tjekker om en bruger er logged fordi for at se ens profile skal man være logged in, hvis man ikke er logged in bliver man redirected til Login siden
 if (localStorage.getItem("loggedIn") === "true") {
 }
 else {
@@ -7,27 +8,29 @@ else {
 currentUserEmailProfile = localStorage.getItem("currentUserEmail");
 existingUserProfiles = JSON.parse(localStorage.getItem("allUsers"));
 
-document.getElementById("tester123").addEventListener("click", getCurrentUserInfo);
+var foundUserProfile = existingUserProfiles.findIndex(function(user) {
+    return user.email === currentUserEmailProfile;
+});
+
+var profileFirst = "Welcome" + " " + existingUserProfiles[foundUserProfile].firstName + "!";
+var profileName = existingUserProfiles[foundUserProfile].firstName + " " + existingUserProfiles[foundUserProfile].lastName;
+var profileEmail = existingUserProfiles[foundUserProfile].email;
+var profileNumber = existingUserProfiles[foundUserProfile].phoneNumber;
+
+
+document.getElementById('profileFirst').innerHTML = profileFirst;
+document.getElementById('profileName').innerHTML = profileName;
+document.getElementById('profileEmail').innerHTML = profileEmail;
+document.getElementById('profileNumber').innerHTML = profileNumber;
+
+
 document.getElementById("LogOut").addEventListener("click", LogOut);
+document.getElementById("deleteAccount").addEventListener("click", deleteAccount);
+
+//denne function logger brugeren ud ved at sætte loggedIn som undefined og dermed ikke === true
 
 function LogOut() {
     localStorage.setItem("loggedIn", "");
     location.href = "../HTMLFiles/index.html";
     localStorage.setItem("currentUserEmail", "");
-}
-
-function getCurrentUserInfo() {
-
-
-
-    //  var foundUserProfile = existingUserProfiles.indexOf(function (user) {currentUserEmailProfile.value});
-    // console.log(foundUserProfile);
-
-    var foundUserProfile = existingUserProfiles.indexOf(function(user) {
-        return user.email === currentUserEmailProfile.value;
-    });
-    console.log(foundUserProfile);
-    console.log(currentUserEmailProfile);
-
-
 }
