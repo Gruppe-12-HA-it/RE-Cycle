@@ -54,7 +54,8 @@ function WriteCartItem(product) {
 function RemoveFromCart(){
     localStorage.setItem("Order" ,0);
     console.log("cart cleared");
-    displayCartItems();
+    display(loadProduct);
+    console.log("Its all over now");
 } //remove from cart funktionen sætter Order key'en i localstorage til 0, da dette ikke passer med nogle json objekt productIDs
 function displayCartItems() {
     display(loadProduct);
