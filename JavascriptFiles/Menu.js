@@ -1,5 +1,5 @@
 //Setting a uniform menu across all html pages using docwrite and then calling the script in the html files//
-document.write("<div id='menu'>")
+document.write("<div id='menu'>");
 document.write("<ul>");
 document.write("<li id='products'><a href='products.html'>Products</a></li>");
 document.write("<li id='contact'><a href='contact.html'>Contact</a></li>");

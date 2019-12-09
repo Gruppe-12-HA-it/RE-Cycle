@@ -65,14 +65,6 @@
       "id":"8"
     },
     {
-      "name":"Please go to the products page and select a product!",
-      "price":"N/A",
-      "image":"../ProductImages/Børnecykel/børnecykel2.jpg",
-      "description":"Ukendt mærke børnecykel fra 2016 - fin stand, 3 gear",
-      "gender":"Childrens",
-      "id":"0"
-    },
-    {
       "name":"Børnecykel ukendt mærke",
       "price":900,
       "image":"../ProductImages/Børnecykel/børnecykel2.jpg",

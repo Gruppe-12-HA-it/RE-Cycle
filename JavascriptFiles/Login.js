@@ -1,7 +1,6 @@
 var eMail = document.getElementById("enteredEmail");
 var password = document.getElementById("enteredPassword");
 var existingUser = JSON.parse(localStorage.getItem("allUsers"));
-var currentUserID = ("");
 
 //Eventhandler for login knap
 document.getElementById("Login!").addEventListener("click", checkLogin);

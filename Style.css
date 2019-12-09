@@ -149,9 +149,6 @@ Article {
 }
 
 /*Styling of the mens, womens and childrens tags on the Products page*/
-.GenderTitle {
-    text-align: center;
-}
 h1,
 h2,
 h3,
@@ -339,3 +336,4 @@ textarea {
     resize: none;
     height: 100%;
     width: 21.7%;
+}

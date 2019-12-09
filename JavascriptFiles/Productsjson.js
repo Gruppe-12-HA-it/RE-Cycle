@@ -80,10 +80,11 @@ function displayChildrens() {
     display("Childrens");
     ButtonsLoaded = true;
 }
-function displayMensWomens() {
+
+/*function displayMensWomens() {
     //potentielt skal jeg adde 3 eventlisteners (en per knap) og så tre if statement filters der viser den respektive data, derved stacker det dataen
     display("Mens" && "Womens");
-}
+}*/
 [mensFilter, womensFilter, childrensFilter].forEach(element =>
     element.addEventListener("change", genderFilter, "")
 );

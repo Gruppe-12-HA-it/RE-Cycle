@@ -1,5 +1,5 @@
 function validateContactInformation() {
-    var name = document.getElementById(`user_name`).value;
+    let name = document.getElementById(`user_name`).value;
 
 
  alert("Hi "+ name + "!"
