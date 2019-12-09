@@ -1,3 +1,5 @@
+//her definerer vi vores User class som skal bruges som en template hvor alle user data bliver indsat i
+
 class User {
     constructor(firstName, lastName, email, phoneNumber, password, id) {
         this.firstName = firstName;
@@ -8,6 +10,9 @@ class User {
         this.id = id;
     }
 }
+
+//denne if statement kører hvis der ikke er nogle users oprettet localstorage, som vil ske første gang hjemmesiden bliver åbnet
+//hvis der ikke eksister nogle bliver der lavet en admin admin login som can bruges
 
 if (localStorage.getItem("allUsers") == null) {
     var allUsers = [];
@@ -29,7 +34,17 @@ else {
     //console.log("it doesnt work");
 }
 
+//Denne function bruges til tjekke det inputtede data fra user'en for at sikre det ikke er noget der ville forvirre programmet
+//hvis data'en opfylder kravene kører functionen createUser
+
 function checkInputs() {
+
+    var existingUser2 = JSON.parse(localStorage.getItem("allUsers"));
+    var foundUser2 = existingUser2.find(function (user) {
+        return user.email === document.getElementById("email").value
+    });
+        existingUser2 = !!foundUser2;
+
 
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
@@ -39,6 +54,11 @@ function checkInputs() {
     let confirmPassword = document.getElementById("confirm_password").value;
 
     var passed = "true";
+
+    if (existingUser2 === true){
+        passed = "false";
+        alert("That email is already registered to an account")
+    }
 
     if (firstName.length < 1) {
         passed = "false";
@@ -75,10 +95,13 @@ function checkInputs() {
 
 }
 
-document.getElementById("signUp").addEventListener("click", createUser);
 
-function createUser(event) {
-    event.preventDefault();
+//Den function create en user fra det indtastede data og smider den i vores array som så bliver smidt i localstorage
+
+document.getElementById("signUp").addEventListener("click", checkInputs);
+
+function createUser() {
+    //event.preventDefault();
     var idLength = JSON.parse(localStorage.getItem("allUsers"));
 
     let htmlLogin = new User(
