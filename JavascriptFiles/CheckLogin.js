@@ -1,11 +1,4 @@
 // Lucas prøver at fixe bugs
-function isLoggedInProfile() {
-    if (localStorage.getItem("loggedIn") === "true") {
-    }
-    else {
-        location.href = "../HTMLFiles/Login.html";
-    }
-}
 function isLoggedInCart() {
     if (localStorage.getItem("loggedIn") === "true") {
     }
