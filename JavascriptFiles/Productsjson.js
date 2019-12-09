@@ -105,4 +105,4 @@ function genderFilter() {
         displayAll();
     }
 }
-displayAll();
+displayAll(); //funktionen displayAll bliver kørt, og produkterne loades ind.
