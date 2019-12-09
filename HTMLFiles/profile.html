@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="..\JavascriptFiles\CheckLogin.js"></script>
+<script>
+window.onload = isLoggedInProfile()();
+</script>
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
@@ -14,22 +18,10 @@
         <!--suppress CheckImageSize -->
         <img src="../Images/Logo.png" class="LogoImg" alt="logo.png" height="42" width="180">
     </a>
-    <br/>
+<br/>
     <!--Alle script directory errors bliver fikset senere af Mig (Sebastian)-->
     <script src="..\JavascriptFiles\Menu.js"></script>
 </header>
 
-<h1 id="profileFirst"></h1>
-<h3> User Information:</h3>
-<h4> Full Name: </h4>
-<p id="profileName"> </p>
-<h4> Email Address: </h4>
-<p id="profileEmail"> </p>
-<h4> Phone Number: </h4>
-<p id="profileNumber"> </p>
-
-<button type="button" id="LogOut"> Log Out</button>
-
 </body>
-<script src="..\JavascriptFiles\Profile.js"></script>
 </html>
