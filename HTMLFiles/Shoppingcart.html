@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="..\JavascriptFiles\CheckLogin.js"></script>
-<script>
-    window.onload = isLoggedInCart()();
-</script>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Style.css">
     <meta charset="UTF-8">
     <title>RE:CYCLE - Cart</title>
-    <script src="..\JavascriptFiles\CheckLogin.js"></script>
 </head>
 <body>
 <header>
@@ -32,16 +27,16 @@
     </div>
     <hr/>
     <div id="productsInCart">
-    <script src="../JavascriptFiles/Shoppingcart.js">
-    </script>
+        <script src="../JavascriptFiles/Shoppingcart.js"> </script>
     </div>
 </div>
 <div class="checkout-button">
-    <button class="checkout" type="button">Check Out</button>
+    <button class="buttonLogIn" type="button">Check Out</button>
 </div>
 <br/>
 <div class="cartClearButton">
-    <button class="cartClear" id="cartClear" type="button">Clear Cart</button>
+    <button class="buttonLogIn" id="cartClear" type="button">Clear Cart</button>
+    <script> document.getElementById("cartClear").addEventListener("click", RemoveFromCart);</script>
 </div>
 </body>
 </html>

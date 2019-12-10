@@ -25,8 +25,6 @@ document.getElementById('profileNumber').innerHTML = profileNumber;
 
 
 document.getElementById("LogOut").addEventListener("click", LogOut);
-document.getElementById("deleteAccount").addEventListener("click", deleteAccount);
-
 //denne function logger brugeren ud ved at sætte loggedIn som undefined og dermed ikke === true
 
 function LogOut() {

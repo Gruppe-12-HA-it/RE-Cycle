@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script src="..\JavascriptFiles\CheckLogin.js"></script>
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300&display=swap" rel="stylesheet">
@@ -18,12 +17,11 @@
     <!--Alle script directory errors bliver fikset senere af Mig (Sebastian)-->
     <script src="..\JavascriptFiles\Menu.js"></script>
 </header>
-    <form name="user_contact">
 
         <h1> Contact us </h1>
-
+<form id="contactForm">
         <h4> Name: </h4>
-        <input type="textCon" id="user_name" value="" placeholder="Type your name"/>
+        <input type="textCon" id="user_name2" placeholder="Type your name"/>
         <br/>
 
         <h4> How do you prefer to be contacted? </h4>
@@ -44,14 +42,12 @@
         <br/>
         <br/>
 
-        <button type="submit" class="buttonCont" onclick="validateContactInformation()" style="cursor: pointer;" > Submit </button>
-
+        <button type="submit" class="buttonCont" id="contactButton" style="cursor: pointer;" > Submit </button>
 
     </form>
 
 
 
-    <script type="application/x-javascript" src="../JavascriptFiles/contact.js"> </script>
-<script type="javascript" src="../JavascriptFiles/CheckLogin.js"></script>
+    <script src="../JavascriptFiles/contact.js"> </script>
 </body>
 </html>

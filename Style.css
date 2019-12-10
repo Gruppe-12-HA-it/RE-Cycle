@@ -116,7 +116,6 @@ Article {
     float: left;
 }
 #ConceptImage {
-    float:left;
     padding-top: 40px;
 }
 /*Hero*/
@@ -200,9 +199,6 @@ h1.SubheaderProducts {
     opacity: 0.7;
 }
 
-#ConceptImage {
-    float: right;
-}
 #filter {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -336,4 +332,23 @@ textarea {
     resize: none;
     height: 100%;
     width: 21.7%;
+}
+
+.h3Concept{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.h3Concept1 {
+
+}
+
+.ourConcept{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }

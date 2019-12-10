@@ -4,6 +4,13 @@ const myProducts = "../products.json";
 let cartData = undefined;
 let loadProduct = undefined; //variabel der skal lagre productID fra localStorage
 
+if (localStorage.getItem("loggedIn") === "true") {
+}
+else {
+    location.href = "../HTMLFiles/LoginCart.html";
+}
+
+
 function retrieveProductFromLS(){
     if (!loadProduct) {
         loadProduct = localStorage.getItem("Order");
@@ -51,11 +58,13 @@ function WriteCartItem(product) {
   </div>
   <hr/>`;
 } //Denne funktion trækker info fra json og skriver det ind i html'en
+
 function RemoveFromCart(){
     localStorage.setItem("Order" ,0);
     console.log("cart cleared");
     display(loadProduct);
     console.log("Its all over now");
+    location.reload();
 } //remove from cart funktionen sætter Order key'en i localstorage til 0, da dette ikke passer med nogle json objekt productIDs
 function displayCartItems() {
     display(loadProduct);

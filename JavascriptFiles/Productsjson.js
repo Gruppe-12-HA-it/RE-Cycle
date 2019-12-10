@@ -47,10 +47,15 @@ function display(type) {
     }); //sørger for eventlisteners for addToCart
 }
 function addToCart() {
-    console.log(this.dataset.id);
-    this.remove();
-    localStorage.setItem("Order" ,this.dataset.id);
-
+    if (localStorage.getItem("loggedIn") === "true") {
+        console.log(this.dataset.id);
+        this.remove();
+        localStorage.setItem("Order" ,this.dataset.id);
+    }
+    else {
+        alert("Please log in before adding Items to your cart!");
+        location.href = "../HTMLFiles/Login.html";
+    }
 }
 function createProductCard(product) {
     return `
