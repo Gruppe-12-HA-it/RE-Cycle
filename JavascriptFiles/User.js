@@ -122,5 +122,5 @@ function createUser() {
     alert(
         "Thank you for creating a user! We will now redirect you to our homepage!"
     );
-
+    location.href = "../HTMLFiles/Login.html";
 }
