@@ -54,7 +54,7 @@ function addToCart() {
     }
     else {
         alert("Please log in before adding Items to your cart!");
-        location.href = "../HTMLFiles/Login.html";
+        location.href = "../Login.html";
     }
 }
 function createProductCard(product) {

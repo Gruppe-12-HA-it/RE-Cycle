@@ -2,7 +2,7 @@
 if (localStorage.getItem("loggedIn") === "true") {
 }
 else {
-    location.href = "../HTMLFiles/Login.html";
+    location.href = "../Login.html";
 }
 
 currentUserEmailProfile = localStorage.getItem("currentUserEmail");
@@ -29,6 +29,6 @@ document.getElementById("LogOut").addEventListener("click", LogOut);
 
 function LogOut() {
     localStorage.setItem("loggedIn", "");
-    location.href = "../HTMLFiles/index.html";
+    location.href = "../index.html";
     localStorage.setItem("currentUserEmail", "");
 }

@@ -7,7 +7,7 @@ let loadProduct = undefined; //variabel der skal lagre productID fra localStorag
 if (localStorage.getItem("loggedIn") === "true") {
 }
 else {
-    location.href = "../HTMLFiles/LoginCart.html";
+    location.href = "../LoginCart.html";
 }
 
 

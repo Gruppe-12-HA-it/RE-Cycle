@@ -118,9 +118,9 @@ function createUser() {
     localStorage.setItem("allUsers", JSON.stringify(allUsers));
     console.log(allUsers);
     //console.log(allUsers[1]);
-    location.href = "../HTMLFiles/Login.html";
+    location.href = "../Login.html";
     alert(
         "Thank you for creating a user! We will now redirect you to our homepage!"
     );
-    location.href = "../HTMLFiles/Login.html";
+    location.href = "../Login.html";
 }

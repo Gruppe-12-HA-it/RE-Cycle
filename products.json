@@ -1,78 +1,9 @@
-{
-  "products" : [
-    {
-      "name":"Centurion Herrecykel",
-      "price":2500,
-      "image":"../ProductImages/CenturionHerreCykel/CenturionHerreCykel.png",
-      "description":"Centurion herrecykel fra 2016 - fin stand, 7 gear",
-      "gender":"Mens",
-      "id":"1"
-    },
-    {
-      "name":"MBK <br/> Herrecykel",
-      "price":3500,
-      "image":"../ProductImages/MBKHerreCykel/MBKHerrecykel.png",
-      "description":"MBK herrecykel fra 2019 - fin stand, 7 gear",
-      "gender":"Mens",
-      "id":"2"
-    },
-    {
-      "name":"Mustang Herrecykel",
-      "price":2999,
-      "image":"../ProductImages/MustangHerreCykel/MustangHerreCykel.png",
-      "description":"Mustang herrecykel fra 2018 - fin stand, 9 gear",
-      "gender":"Mens",
-      "id":"3"
-    },
-    {
-      "name":"Damecykel Ukendt mærke",
-      "price":2700,
-      "image":"../ProductImages/DameCykel/damecykelnostalgie2_1024x1024.jpg",
-      "description":"Damecykel fra 2016 - ikke brugt, 3 gear",
-      "gender":"Womens",
-      "id":"4"
-    },
-    {
-      "name":"Japansk Custom Damecykel",
-      "price":2900,
-      "image":"../ProductImages/DameCykel/Damecykel%20japansk.jpg",
-      "description":"Japansk damecykel fra 2017 - fin stand, 3 gear",
-      "gender":"Womens",
-      "id":"5"
-    },
-    {
-      "name":"Mivera <br/> Damecykel",
-      "price":2000,
-      "image":"../ProductImages/DameCykel/miveradamecykel1_1024x1024.jpg",
-      "description":"Mivera damecykel fra 2016 - fin stand, 3 gear",
-      "gender":"Womens",
-      "id":"6"
-    },
-    {
-      "name":"Børnecykel ukendt mærke",
-      "price":1500,
-      "image":"../ProductImages/Børnecykel/bornecykel-16tommer-1050x700.jpg",
-      "description":"Ukendt mærke børnecykel fra 2016 - fin stand, 5 gear",
-      "gender":"Childrens",
-      "id":"7"
-    },
-    {
-      "name":"Børnecykel ukendt mærke",
-      "price":1250,
-      "image":"../ProductImages/Børnecykel/børnecykel2.jpg",
-      "description":"Ukendt mærke børnecykel fra 2016 - fin stand, 3 gear",
-      "gender":"Childrens",
-      "id":"8"
-    },
-    {
-      "name":"Børnecykel ukendt mærke",
-      "price":900,
-      "image":"../ProductImages/Børnecykel/børnecykel2.jpg",
-      "description":"Ukendt mærke børnecykel fra 2016 - fin stand, 1 gear",
-      "gender":"Childrens",
-      "id":"9"
-    }
-
-
-  ]
-}
+{"_id":{"$oid":"5e9ee452fcc11782e59b14e7"},"name":"Centurion Herrecykel","price":{"$numberInt":"2500"},"image":"https://lh3.googleusercontent.com/Zv_NNkhr1eBpwJFa2pPjgDM5FbAwjqkncfDt-FeCShIT1f4Z8Vjxw2XVBSwKS6yS3ijpsV9StkqNI600S0Tg-Fybjl-IUQaKRF3vdduGHN3v9sDpyevY2_QFra-Z59o1uenH8Xb-3mLCJugHRUWp5Op0AZpnsoMbXUrCF2UWEaww58kpBSZlCiAgOiOdDYGpq6x5VSoCn5-lGAUxn7rjYKMELEypajMNxI7crHJ1F5B79XdzUr_5DUX15FjzyE0PWLKLxh55nOnp_DuXvnmp1gW7vt4NTIIEwssZLsSp68kdwCMUTvOPI6AAouPR-4KH-FRCmJ0uHy5LZ250GUMz7wLuVkjBMrA85EJNZcVv49tttku79qt3ITf785l89v6VKX3MNvEe3vaMe-0O06cx49BCSiNJLthjFBqn0iFYgQDZey2bUlXte81G7WQI2hYIJqqFguclChyBq5L_hEwxneBEmMu55f-DkGg4NGWsma-dUE500jmjhBEbH8zhbD881w91bX3ytNeyv1Wm-0Rq7e41ROaJv37gwqNZam-7Jse9IDsOfzxdKRwJC2DzHCklfSTBN-CXnoVyRwX80TTpWMRCg33UcfefPWEHrogGxLh0-r0BXWl4kxxmlAt6m4Q2pbkeYzmgrBFxeg8Fcvu_u2MVy9kKyP5AlX_1sjg51d7fQrTxH9WJjsP07ERY0xQ6hE0y9jEEl9ztCpJ3P5RzQ1iPgJABvyNAxgA9HRUwPiyk2lBRvPRoN6Q=w639-h477-no","description":"Centurion herrecykel fra 2016 - fin stand, 7 gear","gender":"Mens"}
+{"_id":{"$oid":"5e9ee497fcc11782e59b14e8"},"name":"MBK <br/> Herrecykel","price":{"$numberInt":"3500"},"image":"https://lh3.googleusercontent.com/Mmkfd4XxpjCbOMmP5BvwPfUGrSfoVjbG3qwKj-QnoEthWOOVviH2m961K4U5LVvsxJ1khQUNo_N9PY0gaDDL5uWw4dIvKr8u2we5DczVpDazPAop0fDASxLCnCNbJFVUHeLMzCQ1cbD-dVBUObxYVaJuoFmxUCMvgLw27KpsBgX0LmtvjSlZPNIxLcfgSmUvcM39YVWnQz4BgqwbhxlmWZ0N0K7jYKBr2svobB4pnbTZphpE7KEHdFiC8xqsDmTHgPV81KzQvSFGGiQm5mzQirHMwPDya1TO1gDKQoZ_CuOb2aeDtq58tOg-LyWcS_RRZNmdGlcM4MMp8I0Rg8LBMC-V_r1pV425EoYWnXWsADN8Sz1SLZL9VoCbxyeDXKeX7KkBDwBv6A9aE8k9vR8jZiZJEdRWPPAccIg8nf4GHpyc7sPKfyQqYpCnNHgBg_Jilf43RbKWgw9DV2yQS2MPOIkgt0kuWSAcSL4nTJca3J9P0ikJbFfYYdKLOv9Q7cUFiiKA_VVqmfuqPwb7OtOWRtcvvkLK3geqPD2dYMesdMgvgN5x7I8RI6E3YTPigJvcvvFE9fBENHcbjxcxRuPeeCePhYPxivLWEtdsjAMU4SkdGZ0Zo0j5vAebaZd9NUT1a5h-U5zCRx5ZCA_AwlpHgJ-7olI7fGZxN4Na7-Sir3AknsifMLCEhVuEV7UJOV7p0praiKo3rc7fhrrRdPbrJpQIXSzwcFukrpi2tWE9FEIZevXd8IfazzA=w633-h475-no","description":"MBK herrecykel fra 2019 - fin stand, 7 gear","gender":"Mens"}
+{"_id":{"$oid":"5e9ee52cf96eb5dc39342307"},"name":"Mustang Herrecykel","price":{"$numberInt":"2999"},"image":"https://lh3.googleusercontent.com/8Nw4yPm3SfZVmfLRFP4drJskwGVAh5p0Q_pEhQ9uvP8Yo1usM2AbKEZiMsY0vlUo6EAkkGR1uHzjzQVoi8zFVcZoUDOYv32b_e_SVrkYc5ls8iG63lmGWaah1C4Y2pCC5-3UxZNC0tBOMt45aRyio0fTjAYeeGs1SNvS8Gu56cC3FkK_XXPCUC5mtIIouxYrlGKgcElGEm41NcoS8_gjRLuUgABJNklMy50Pv-2Ok-DI0TIK9aheIf1SFvT5RYY1aYvK4csAGY1y_d2IQ1gztj-fiBo1PiJqdWWV3WT1su_4zZZTO3g8kZki14MHg6lgJpvkdb0QXxSBJzm2bfJihgWJyAAC_7wv4MO2ITlAR6akvAH8hko1X6LKyDjzdgVYq68RlV_22HVuCmkL3BdY2p7lpGgheHJm4ZW8hNf46rUxWkG6KylZKHL4gJTmoXvoAxQ3Gsls-PLmaZQqeZHUyZClsU9kuIXMusQ2DApoQq_h97JZtPpJfsbkSK17Wvn-qgQpf-1LCeOY77eHG_TP_070zNFJ7iSXqiMF4pt8yife6ScBLhDQXZaJ-5VjfhLQH2xJr37-EDRW5zAgvRCQuJ1fed3r36i8Xj9tMVVJNnYFpPGsDoqZnnY83HCWMTEcPNxniCzveB4xiFzLBYx4plQbXIBdp-l5La7C3Q_cXkrIoP58DoFjpd0DT-v0igVBm6LOtPLZsLSfYr3yXyT-oJLxdd3UGx3O_Y8OEqWq6Pq5F04phZTSonM=w637-h474-no","description":"Mustang herrecykel fra 2018 - fin stand, 9 gear","gender":"Mens"}
+{"_id":{"$oid":"5e9ee571f96eb5dc39342308"},"name":"Damecykel Ukendt mærke","price":{"$numberInt":"2700"},"image":"https://lh3.googleusercontent.com/mvpUCqbJrW3dDeY9goDfF4EWGt7JHvRrau2MphxLVGvsf9a8pKqX7jq9EfdN5cKvz10wKcHyN4u684iiTOknm776z7W5XDiDOlU1kgvhUiAtMBmVbS6MpaKR_LXn9QTOcE6Q97m8AOwyhlwzxtalgJeBdM9U2oPvzwxvK4xtKc3PLSlqSvJsUMyW1YGNFD7DPlUIsav8iCYmP52k535I4DvNFmcIda1ZMw9gSCi86zC0dsQYSrbXKZ_z3Q4EHt8YqaGdLwicmZgHQoebR1Hh2pFFHe1igviznp0HGxcXY2CN7LH3Rwxr8DVNbUVXIMOKESnG825F5D4vu6xeffs5GJBdCG71iGQSa59Os_NEDsnQJMdHrDEY8q_LDIvKD8UaynF86E6B-oqjHcOGQc4ns9jt01n3Ox-kzcVBaDzObbmNoOSWXKNaqG5legmqj6s9_u2H2uf2Kp7qAZTopZWTsXn-kcApSdNmPklLQyI0jXlbVQlpSMdvNCj7f5t44sb5nxBuhk_qs8IiXnj06AhYT4D76tF5qZ1139qGudmz24i7xoQWWByJEvz1KAzmKrDojMwLdKZWYVqbrt9cgrDQmR7eJA5a28zwMuYlgOCe4hz5ai8SWs3qQoRw2OMdYQYPgzYtREq6NXtWhnA0dk0mUeQYT2f5LoFrVcYfS2lg4W0_UqP8_cQUKCH3Ua5IpwQafryjdUzNCXiuLMYRShH-j1bJWKlHztIYOPnzybGppDn6htzkDwM5rv4=w1023-h678-no","description":"Damecykel fra 2016 - ikke brugt, 3 gear","gender":"Womens"}
+{"_id":{"$oid":"5e9ee590f96eb5dc39342309"},"name":"Japansk Custom Damecykel","price":{"$numberInt":"2900"},"image":"https://lh3.googleusercontent.com/QxU4cb_xZlB6FJ3k_nvyMIx7-VBk-oSZBt0YjYiLDTV4dDzglmx1bULfjTKQpTt9pyDWiYUV_EceKt9c14J8gpibJDwD5NFhcDFG9KHH2F8DyuyhAalAtA-LFt9Hmr8I3YHAKlbRr9k253A80e2wcB_JPE8ZqkCbxlf_orW6HGRpm565JZ7h1WNyg-SRrd3iOwJpV_-w2-nATlAYo0j6L4KAlLjydJnVjsCEKCM-uOTHgVUNMdhqWnMPyVSleD0BzlevSiUu4IB-kMHwcm5GDa0n9ynBdYYcXuaCSN1TIfacf7-nXXOt0Ly_ApatM_8HtYeXKDGaWPdNsbLGqg1ZyfzZ-aUQWETXfO02naOFztJvBaZL6Nt7mgXrg3eihTdur2PS6GENmGfb1x-lSu-X5IrhY0Scp-Unx8T_pVwcgQ0HTPVlIH8QRt86plbHP06CduLc8UISE5LqEjdUelTYsrNMXRxiLRXSaJzHohBpvFKjgMux27VyFrKHi4RzIGx5Xmaa7AxA5v1Ydu7N9F2rTMrRNlecMAAjKthA9iwGhVTFy_8t3YoWg5ZZTMHtwlpbC4iNugJwvYegtkOMcq0SOumfzg61wClrowOFquzxxN5kagHU4D3P-RcYENTpkxgoebbP8H4zxLET7V7OjLrAyR6UKzDTfNQoxJ3wMKWD8un5fR_SImy2qBNtmXv36VoBfpBuBji7kMdufPpoIz5Gq5IpAx2kHp0bmGm2lzVy9UUIZ9nQz1sjAU4=w1431-h937-no","description":"Japansk damecykel fra 2017 - fin stand, 3 gear","gender":"Womens"}
+{"_id":{"$oid":"5e9ee5a4f96eb5dc3934230a"},"name":"Mivera <br/> Damecykel","price":{"$numberInt":"2000"},"image":"https://lh3.googleusercontent.com/toiAiuxNxP2jEAmjeVAdV9KY0jmkmBBtgglki9a0niCxQBIXwyWXS877zKsaoBDUVlmVkSPGGWLmm7QV72pWg0e8NgpWIRaTfLpGqeL_T4e8y-dUG3rWT7zX-27fkm9Sn-mB5zJEw3OyKzJZvIQwkbtP-QsuzXR8wIKVNGcsr4XD8t1HyK4AeeTbE-LvntFTOvASl11TiyPapv5X2SZjR9MY69iC0NAiyALt0vwG4QZVQrRk0iih9F9hzcP57RwVX7jjeEOUbSL3X_tdE16ZptX8t8IE-pDJvLQSQuDWaQNztBogbWZr3lA2zTpEtM0TDxhhg36-NUpARszNvjztp5HDGzq06ud4rLHAc1vFXrTBpk0885yyMXtBpgUHpOdzjfJ8-BblXLJ_elHpVrI75l6pdR6tM-X5lnSfd25xSh35XLAyfuGbz5i-Bzdnsj0Ibrs7bqTJ3Kfq87t8Ho9FeSz5IJXQVk1BWBYC-rahCIjPlqTzmRvOlbbbi1YpFQTYf4lZw4awf_CxhN4hOFVwU1BHsYWOA4pio8FBGuGdWOaPuTy0McjTGE-AQZVswVPFuhuRmKMdQJpO2rTom_FnB_LfYUpd0Yts1dxmKBTIdwy-dl1WY06YzsuLxP8dNc4yC82anrVyG22VhC9UAaurEv6HQh0xbD9r95TEKDSE9xDKskj3rTIuDe536SN6f4kayGRyc6xMwk9LtgqTCFFt5zzO3NBhLcQUCOTEeXFWSX21mKP7pQiP3qI=w1000-h662-no","description":"Mivera damecykel fra 2016 - fin stand, 3 gear","gender":"Womens"}
+{"_id":{"$oid":"5e9ee5b7f96eb5dc3934230b"},"name":"Børnecykel ukendt mærke","price":{"$numberInt":"1500"},"image":"https://lh3.googleusercontent.com/tHlkkDYSLU1jczb57hrerz_Rxt9ptBXsE8TELV1kYulmLjKbGmQOSp6MVXi4QLHfqGQGw3w0hcdTfppksv8Cj9-PXIOKzrzDZVRpdIfagyXectezmDgPHZ0s3lvVyWwt4mNiZ0Uks-27l8vsmNUFYykb8S99zeH2V5fhIW9XWYMbj55o3d5ix49rfWHbNDxBxYroUm6Sc_Vwfdo3A2js3X-p9SNdyPN86oB3J6-Vy2UK18dJCctDyT6QEYfyIf-CtqG47Y8xkKp4I6jJrHx10BuPTKLtiZQDKFmU6Ga4AxY4HL8fvkbAmn_5asBCRrxTBBZwj3I22Te0m9Rf2Z4WPupC4gnrRkwIUbYNtmQAkRFE406r6eZfy8pD-XCPHRzU7y5-AawdPJm4ERFuIkjX7LBxv_fZJdDHHTUrtVsh-LguroOiOhxri3p-TYlo4-lVk93JkMNhi1yhAznLTKuz-jhEZxhUXsBOkEvA_90CYDfOms2TVOfTTtS__xiGv_1-VYQX_1PwlaBByi-sZZBj6-_zV45S1giIRNsL0pDbBrTIe491WLwY__w4dLleT6vWpvnNewnM_pDyaVMh7WKxqCqZ1oSFLbp40hu-H1mwjYO6ARxc3uUztvtFKD-V2jAE-fno7Vdx_iw0GwbzeDtFqwnxrO-A--orVolZaJAo_P8emffFBFR8sKpLzayIRwjca7XivWHLlkhDXv4wRzbbnK9f6JSkjhKavp2qNnPVCnm5-6rGnjKCgjw=w1050-h700-no","description":"Ukendt mærke børnecykel fra 2016 - fin stand, 5 gear","gender":"Childrens"}
+{"_id":{"$oid":"5e9ee5d7f96eb5dc3934230c"},"name":"Børnecykel ukendt mærke","price":{"$numberInt":"1250"},"image":"https://lh3.googleusercontent.com/hpqo3fM4rJLwQHSpm3BngVmt1TMsul5JYeqeiyLI-1dqNLkvxk7gMazmcrPx4iIRTp1fc6m_kYG0nr00K8UEEvJJGwJPb4Yqs9z9muBxMR3QrHowOGzzWi4ZJqj-I9P39J_YOrDrKJFGZyNcsYQIz352Wd-HzV1Kg-IhIlz8xlA3ZlWIP8wQ67ZwZCDe20CVirvUvUlmgdljn96CfzxmvLEpOZrFmnbol2VfeDatOoSl6hsuCO42YuzyU2ZDfMQgpqehJbHwiJ47RVgzvpagE8stwpqtyN3sNzM6f08rAn6-gRpgXzehLHOGO5H4OqU3jekUD19CRKaQB1HuMSvx9BvCUzVYYXO7dEE07r4NI83wjgisgpLlJ4eV-bFRyvdlALF3T9zneNp0wjAgzTxDBNoQunLeU6FhygufDeQx3ztKL17JlriOq-N9yumml0lAefZqn_9d3kuQOc0G2jvwufFKkB9Szvwrjr6jI0R_cw9o0P-K8HhbKIMPzC8tTJ5W_VdqzEm2baVpClFRTc07ZhPTYQFG03LAaxzKtjggpNosCmQ0_8BCmmxaHRqyTdZKPQgocK1wsdI77pLVdXGTa0GQ8CuVxjtTIpcMpcr-NSzxWlffmE-fbuXNaQVsCiWKVO98_1xykJLWHG3YAtlwPUrqqwfQKD7Wudzlj31iNBQqh1I7vDqM9mwSWoDUHSWTQ-vFDU8qrDZAiu9X58BlNUZqFXEvQbCtwXleAn4w-iprtJPTCBAT9W8=w960-h720-no","description":"Ukendt mærke børnecykel fra 2016 - fin stand, 3 gear","gender":"Childrens"}
+{"_id":{"$oid":"5e9ee5eef96eb5dc3934230d"},"name":"Børnecykel ukendt mærke","price":{"$numberInt":"900"},"image":"https://lh3.googleusercontent.com/hpqo3fM4rJLwQHSpm3BngVmt1TMsul5JYeqeiyLI-1dqNLkvxk7gMazmcrPx4iIRTp1fc6m_kYG0nr00K8UEEvJJGwJPb4Yqs9z9muBxMR3QrHowOGzzWi4ZJqj-I9P39J_YOrDrKJFGZyNcsYQIz352Wd-HzV1Kg-IhIlz8xlA3ZlWIP8wQ67ZwZCDe20CVirvUvUlmgdljn96CfzxmvLEpOZrFmnbol2VfeDatOoSl6hsuCO42YuzyU2ZDfMQgpqehJbHwiJ47RVgzvpagE8stwpqtyN3sNzM6f08rAn6-gRpgXzehLHOGO5H4OqU3jekUD19CRKaQB1HuMSvx9BvCUzVYYXO7dEE07r4NI83wjgisgpLlJ4eV-bFRyvdlALF3T9zneNp0wjAgzTxDBNoQunLeU6FhygufDeQx3ztKL17JlriOq-N9yumml0lAefZqn_9d3kuQOc0G2jvwufFKkB9Szvwrjr6jI0R_cw9o0P-K8HhbKIMPzC8tTJ5W_VdqzEm2baVpClFRTc07ZhPTYQFG03LAaxzKtjggpNosCmQ0_8BCmmxaHRqyTdZKPQgocK1wsdI77pLVdXGTa0GQ8CuVxjtTIpcMpcr-NSzxWlffmE-fbuXNaQVsCiWKVO98_1xykJLWHG3YAtlwPUrqqwfQKD7Wudzlj31iNBQqh1I7vDqM9mwSWoDUHSWTQ-vFDU8qrDZAiu9X58BlNUZqFXEvQbCtwXleAn4w-iprtJPTCBAT9W8=w960-h720-no","description":"Ukendt mærke børnecykel fra 2016 - fin stand, 1 gear","gender":"Childrens"}
